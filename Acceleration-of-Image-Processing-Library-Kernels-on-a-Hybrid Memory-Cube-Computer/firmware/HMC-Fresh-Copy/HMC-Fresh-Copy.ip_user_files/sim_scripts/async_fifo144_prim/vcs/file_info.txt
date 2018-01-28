@@ -1,3 +1,0 @@
-Language File-Name                         IP                  Library         File-Path                                                                                       
-Verilog, async_fifo144_prim_sim_netlist.v, async_fifo144_prim, xil_defaultlib, ../../../../HMC-Fresh-Copy.srcs/sources_1/ip/async_fifo144_prim/async_fifo144_prim_sim_netlist.v
-Verilog, glbl.v,                           *,                  xil_defaultlib, glbl.v                                                                                          
