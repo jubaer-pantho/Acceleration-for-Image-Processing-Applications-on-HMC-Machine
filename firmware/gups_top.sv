@@ -53,10 +53,8 @@ module gups_top # (
     input  wire [31:0]              vector_size,
     input  wire [31:0]              work_size,
     input  wire [31:0]              hmc_address,
-    input  wire                     enable,
-      
-        
-    output reg                finished
+    input  wire                     enable,        
+    output reg                      finished
        
 );  
        
@@ -182,14 +180,10 @@ module gups_top # (
             wr_en_cmd <= 0;
             counter_rd <=0;
             counter_wr <=0;
-            readFinished <=0;
-            writeFinished <=0;
             readCounter<=0;
             writeStart <=0;
             current_addr <= hmc_address;
-            write_addr <= hmc_address + 16*vector_size;
-            startFunction <= 0;           
-    
+            write_addr <= hmc_address + 16*vector_size;            
         end
         else if(enable_this ==1) begin
             if(!cmd_full && !readFinished && counter_rd<32) begin
@@ -203,7 +197,7 @@ module gups_top # (
              
                 counter_rd <= counter_rd+1;   // only 32 tags are being used           
                 
-                if(current_addr >= (hmc_address + (16*work_size - 16))) begin       //16 ->32
+                if(current_addr >= (hmc_address + 16*work_size)) begin       //16 ->32
                     readFinished <=1;
                     current_addr <= current_addr+16;
                     
@@ -243,7 +237,7 @@ module gups_top # (
                     
                 end
                 
-                if(write_addr >= (hmc_address + (16*vector_size + 16 *work_size - 16))) begin //made change 16->32
+                if(write_addr >= (hmc_address + 16*vector_size + 16 *work_size)) begin //made change 16->32
                     finished <=1;
                     writeFinished <=1;
                     writeStart <=0;
@@ -272,7 +266,7 @@ module gups_top # (
 
 
 //if_id3            
-        if(write_addr >= (hmc_address + (16*vector_size + 16 *work_size - 16))) begin
+        if((current_addr >= (hmc_address + 16*work_size))  && (writeFinished ==1)) begin
              if(enable == 0) begin
                  enable_this <= 0;
                  finished <= 0;
@@ -282,22 +276,15 @@ module gups_top # (
              end            
         end
 //if_id3ends
-        
+/*        
         if (enable == 0) begin
             enable_this <=0;
-            //finished <=0;
             wr_en_data <= 0;
             wr_en_cmd <= 0;
             counter_rd <=0;
             counter_wr <=0;
- //           readFinished <=0;
- //           writeFinished <=0;
             current_addr <= 0;
             startFunction <= 0;   
-    
-            //write_addr <=0;
-//            writeStart <=0;
-            
             readCounter<=0;
             
             cmd_this <= 0;
@@ -306,7 +293,7 @@ module gups_top # (
             size_this <= 0;
             data_this <= 0;
         end
-        
+*/        
         
             
 //else_id2       
