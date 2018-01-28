@@ -1,9 +1,4 @@
-// gups_top.sv
-// Copyright 2013 Pico Computing, Inc.
-/*
-* Description:
-* Wrapper of GUPS
-*/
+
 `timescale 1ns/1ps
 
 `include "reg_list.vh"
