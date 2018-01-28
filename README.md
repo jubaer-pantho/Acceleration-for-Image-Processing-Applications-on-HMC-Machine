@@ -15,4 +15,12 @@ How to run:
 1. Load the bitfile
 2. Go to software directory
 3. command: <./process 0>
+4. Now wait!!!
 
+System Behavior:
+The program reads the input image and inverts it on the FPGA. The inverted image is then read back to desktop machine and displayed.
+
+
+Disclaimer:
+The image processing libraries used in this work are collected from the following link:
+http://csce.uark.edu/~jgauch/
