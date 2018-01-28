@@ -1,20 +1,3 @@
-/* Vector addition
-This code performs a vector addition. Data is read out of the HMC and interpreted as integers. The size of the vector is provided by software.
-The software preloads a section of the HMC. The first portion of this section is seen as the first vector, the second as the second vector.
-The result is written at the addresses following the preloaded section. Example:
-Preloaded:
-Address 0x00: 1                             Address 0x40: 6 (0x00 + 0x20)
-Address 0x08: 2                             Address 0x48: 8 (0x08 + 0x28)
-Address 0x10: 3                             Address 0x50: 10
-Address 0x18: 4         would result in:    Address 0x58: 12
-Address 0x20: 5
-Address 0x28: 6
-Address 0x30: 7
-Address 0x38: 8
-
-This version uses 8 ports of the HMC controller.
-*/
-
 `timescale 1ns / 1ps
 
 `ifdef SIMULATION
@@ -359,7 +342,7 @@ module user_wrapper #(
     assign hmc_address7 = hmc_address6 + work_size6*16;
     assign finished = finished0 && finished1 && finished2 && finished3 && finished4 && finished5 && finished6 && finished7;
     
-    /* Instantiate 8 vector addition modules. Every module uses one user port of the HMC Controller
+    /* Instantiate 8 modules. Every module uses one user port of the HMC Controller
     and is responsible for a portion of the vector address space. */
     gups_top UserModule_0 (
         .tx_clk(tx_clk),
