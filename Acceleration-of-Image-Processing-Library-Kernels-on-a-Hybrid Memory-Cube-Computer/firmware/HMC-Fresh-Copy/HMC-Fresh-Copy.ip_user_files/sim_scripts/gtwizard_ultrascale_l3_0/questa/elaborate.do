@@ -1,0 +1,1 @@
+vopt -64 +acc -l elaborate.log -L unisims_ver -L unimacro_ver -L secureip -L gtwizard_ultrascale_v1_6_1 -L xil_defaultlib -work xil_defaultlib xil_defaultlib.gtwizard_ultrascale_l3_0 xil_defaultlib.glbl -o gtwizard_ultrascale_l3_0_opt

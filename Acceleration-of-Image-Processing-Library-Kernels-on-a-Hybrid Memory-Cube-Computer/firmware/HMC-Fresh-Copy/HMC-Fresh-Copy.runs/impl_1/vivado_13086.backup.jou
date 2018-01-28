@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2015.4 (64-bit)
+# SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+# IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+# Start of session at: Sun Dec 17 20:01:43 2017
+# Process ID: 13086
+# Current directory: /home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.runs/impl_1
+# Command line: vivado -log Pico_Toplevel.vdi -applog -messageDb vivado.pb -mode batch -source Pico_Toplevel.tcl -notrace
+# Log file: /home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.runs/impl_1/Pico_Toplevel.vdi
+# Journal file: /home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.runs/impl_1/vivado.jou
+#-----------------------------------------------------------
+source Pico_Toplevel.tcl -notrace

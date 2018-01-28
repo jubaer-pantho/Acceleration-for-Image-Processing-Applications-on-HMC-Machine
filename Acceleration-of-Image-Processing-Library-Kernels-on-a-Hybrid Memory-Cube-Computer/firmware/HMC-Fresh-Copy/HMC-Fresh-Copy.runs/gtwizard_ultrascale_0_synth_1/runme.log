@@ -1,0 +1,2259 @@
+
+*** Running vivado
+    with args -log gtwizard_ultrascale_0.vds -m64 -mode batch -messageDb vivado.pb -notrace -source gtwizard_ultrascale_0.tcl
+
+
+****** Vivado v2015.4 (64-bit)
+  **** SW Build 1412921 on Wed Nov 18 09:44:32 MST 2015
+  **** IP Build 1412160 on Tue Nov 17 13:47:24 MST 2015
+    ** Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+
+source gtwizard_ultrascale_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2015.4/data/ip'.
+WARNING: [IP_Flow 19-3664] IP 'gtwizard_ultrascale_0' generated file not found '/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.dcp'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'gtwizard_ultrascale_0' generated file not found '/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_stub.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'gtwizard_ultrascale_0' generated file not found '/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_stub.vhdl'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'gtwizard_ultrascale_0' generated file not found '/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_sim_netlist.v'. Please regenerate to continue.
+WARNING: [IP_Flow 19-3664] IP 'gtwizard_ultrascale_0' generated file not found '/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0_sim_netlist.vhdl'. Please regenerate to continue.
+Command: synth_design -top gtwizard_ultrascale_0 -part xcku060-ffva1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xcku060'
+INFO: [Common 17-1223] The version limit for your license is '2016.02' and will expire in -653 days. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:56 . Memory (MB): peak = 1063.270 ; gain = 219.121 ; free physical = 27348 ; free virtual = 36633
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_0' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_0_gtwizard_top' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_top.v:170]
+	Parameter C_CHANNEL_ENABLE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_COMMON_SCALING_FACTOR bound to: 2 - type: integer 
+	Parameter C_CPLL_VCO_FREQUENCY bound to: 2578.125000 - type: float 
+	Parameter C_FORCE_COMMONS bound to: 0 - type: integer 
+	Parameter C_FREERUN_FREQUENCY bound to: 187.500000 - type: float 
+	Parameter C_GT_TYPE bound to: 0 - type: integer 
+	Parameter C_GT_REV bound to: 17 - type: integer 
+	Parameter C_INCLUDE_CPLL_CAL bound to: 2 - type: integer 
+	Parameter C_LOCATE_COMMON bound to: 0 - type: integer 
+	Parameter C_LOCATE_RESET_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_USER_DATA_WIDTH_SIZING bound to: 0 - type: integer 
+	Parameter C_LOCATE_RX_BUFFER_BYPASS_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_IN_SYSTEM_IBERT_CORE bound to: 2 - type: integer 
+	Parameter C_LOCATE_RX_USER_CLOCKING bound to: 0 - type: integer 
+	Parameter C_LOCATE_TX_BUFFER_BYPASS_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_TX_USER_CLOCKING bound to: 0 - type: integer 
+	Parameter C_RESET_CONTROLLER_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_BUFFBYPASS_MODE bound to: 0 - type: integer 
+	Parameter C_RX_BUFFER_BYPASS_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_BUFFER_MODE bound to: 0 - type: integer 
+	Parameter C_RX_CB_DISP bound to: 8'b00000000 
+	Parameter C_RX_CB_K bound to: 8'b00000000 
+	Parameter C_RX_CB_MAX_LEVEL bound to: 4 - type: integer 
+	Parameter C_RX_CB_LEN_SEQ bound to: 1 - type: integer 
+	Parameter C_RX_CB_NUM_SEQ bound to: 0 - type: integer 
+	Parameter C_RX_CB_VAL bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_CC_DISP bound to: 8'b00000000 
+	Parameter C_RX_CC_ENABLE bound to: 0 - type: integer 
+	Parameter C_RESET_SEQUENCE_INTERVAL bound to: 0 - type: integer 
+	Parameter C_RX_CC_K bound to: 8'b00000000 
+	Parameter C_RX_CC_LEN_SEQ bound to: 1 - type: integer 
+	Parameter C_RX_CC_NUM_SEQ bound to: 0 - type: integer 
+	Parameter C_RX_CC_PERIODICITY bound to: 5000 - type: integer 
+	Parameter C_RX_CC_VAL bound to: 80'b00000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_COMMA_M_ENABLE bound to: 0 - type: integer 
+	Parameter C_RX_COMMA_M_VAL bound to: 10'b1010000011 
+	Parameter C_RX_COMMA_P_ENABLE bound to: 0 - type: integer 
+	Parameter C_RX_COMMA_P_VAL bound to: 10'b0101111100 
+	Parameter C_RX_DATA_DECODING bound to: 0 - type: integer 
+	Parameter C_RX_ENABLE bound to: 1 - type: integer 
+	Parameter C_RX_INT_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_RX_LINE_RATE bound to: 15.000000 - type: float 
+	Parameter C_RX_MASTER_CHANNEL_IDX bound to: 108 - type: integer 
+	Parameter C_RX_OUTCLK_BUFG_GT_DIV bound to: 1 - type: integer 
+	Parameter C_RX_OUTCLK_FREQUENCY bound to: 375.000000 - type: float 
+	Parameter C_RX_OUTCLK_SOURCE bound to: 1 - type: integer 
+	Parameter C_RX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter C_RX_RECCLK_OUTPUT bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_RX_REFCLK_FREQUENCY bound to: 150.000000 - type: float 
+	Parameter C_RX_SLIDE_MODE bound to: 1 - type: integer 
+	Parameter C_RX_USER_CLOCKING_CONTENTS bound to: 0 - type: integer 
+	Parameter C_RX_USER_CLOCKING_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_USER_CLOCKING_RATIO_FSRC_FUSRCLK bound to: 1 - type: integer 
+	Parameter C_RX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2 bound to: 2 - type: integer 
+	Parameter C_RX_USER_CLOCKING_SOURCE bound to: 0 - type: integer 
+	Parameter C_RX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter C_RX_USRCLK_FREQUENCY bound to: 375.000000 - type: float 
+	Parameter C_RX_USRCLK2_FREQUENCY bound to: 187.500000 - type: float 
+	Parameter C_SECONDARY_QPLL_ENABLE bound to: 0 - type: integer 
+	Parameter C_SECONDARY_QPLL_REFCLK_FREQUENCY bound to: 257.812500 - type: float 
+	Parameter C_TOTAL_NUM_CHANNELS bound to: 8 - type: integer 
+	Parameter C_TOTAL_NUM_COMMONS bound to: 2 - type: integer 
+	Parameter C_TOTAL_NUM_COMMONS_EXAMPLE bound to: 0 - type: integer 
+	Parameter C_TXPROGDIV_FREQ_ENABLE bound to: 0 - type: integer 
+	Parameter C_TXPROGDIV_FREQ_SOURCE bound to: 0 - type: integer 
+	Parameter C_TXPROGDIV_FREQ_VAL bound to: 375.000000 - type: float 
+	Parameter C_TX_BUFFBYPASS_MODE bound to: 0 - type: integer 
+	Parameter C_TX_BUFFER_BYPASS_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_TX_BUFFER_MODE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_ENCODING bound to: 0 - type: integer 
+	Parameter C_TX_ENABLE bound to: 1 - type: integer 
+	Parameter C_TX_INT_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_TX_LINE_RATE bound to: 15.000000 - type: float 
+	Parameter C_TX_MASTER_CHANNEL_IDX bound to: 108 - type: integer 
+	Parameter C_TX_OUTCLK_BUFG_GT_DIV bound to: 1 - type: integer 
+	Parameter C_TX_OUTCLK_FREQUENCY bound to: 375.000000 - type: float 
+	Parameter C_TX_OUTCLK_SOURCE bound to: 4 - type: integer 
+	Parameter C_TX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter C_TX_REFCLK_FREQUENCY bound to: 150.000000 - type: float 
+	Parameter C_TX_USER_CLOCKING_CONTENTS bound to: 0 - type: integer 
+	Parameter C_TX_USER_CLOCKING_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_TX_USER_CLOCKING_RATIO_FSRC_FUSRCLK bound to: 1 - type: integer 
+	Parameter C_TX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2 bound to: 2 - type: integer 
+	Parameter C_TX_USER_CLOCKING_SOURCE bound to: 0 - type: integer 
+	Parameter C_TX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter C_TX_USRCLK_FREQUENCY bound to: 375.000000 - type: float 
+	Parameter C_TX_USRCLK2_FREQUENCY bound to: 187.500000 - type: float 
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_0_gtwizard_gthe3' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_gthe3.v:138]
+	Parameter C_CHANNEL_ENABLE bound to: 192'b000000000000000000000000000000000000000000000000000000000000000000000000000011111111000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter C_COMMON_SCALING_FACTOR bound to: 2 - type: integer 
+	Parameter C_CPLL_VCO_FREQUENCY bound to: 2578.125000 - type: float 
+	Parameter C_FREERUN_FREQUENCY bound to: 187.500000 - type: float 
+	Parameter C_GT_REV bound to: 17 - type: integer 
+	Parameter C_INCLUDE_CPLL_CAL bound to: 2 - type: integer 
+	Parameter C_LOCATE_RESET_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_USER_DATA_WIDTH_SIZING bound to: 0 - type: integer 
+	Parameter C_LOCATE_RX_BUFFER_BYPASS_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_RX_USER_CLOCKING bound to: 0 - type: integer 
+	Parameter C_LOCATE_TX_BUFFER_BYPASS_CONTROLLER bound to: 0 - type: integer 
+	Parameter C_LOCATE_TX_USER_CLOCKING bound to: 0 - type: integer 
+	Parameter C_RESET_CONTROLLER_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_BUFFBYPASS_MODE bound to: 0 - type: integer 
+	Parameter C_RX_BUFFER_BYPASS_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_BUFFER_MODE bound to: 0 - type: integer 
+	Parameter C_RX_DATA_DECODING bound to: 0 - type: integer 
+	Parameter C_RX_ENABLE bound to: 1 - type: integer 
+	Parameter C_RX_INT_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_RX_LINE_RATE bound to: 15.000000 - type: float 
+	Parameter C_RX_MASTER_CHANNEL_IDX bound to: 108 - type: integer 
+	Parameter C_RX_OUTCLK_BUFG_GT_DIV bound to: 1 - type: integer 
+	Parameter C_RX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter C_RX_USER_CLOCKING_CONTENTS bound to: 0 - type: integer 
+	Parameter C_RX_USER_CLOCKING_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_RX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2 bound to: 2 - type: integer 
+	Parameter C_RX_USER_CLOCKING_SOURCE bound to: 0 - type: integer 
+	Parameter C_RX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter C_TOTAL_NUM_CHANNELS bound to: 8 - type: integer 
+	Parameter C_TOTAL_NUM_COMMONS bound to: 2 - type: integer 
+	Parameter C_TXPROGDIV_FREQ_ENABLE bound to: 0 - type: integer 
+	Parameter C_TXPROGDIV_FREQ_SOURCE bound to: 0 - type: integer 
+	Parameter C_TX_BUFFBYPASS_MODE bound to: 0 - type: integer 
+	Parameter C_TX_BUFFER_BYPASS_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_TX_BUFFER_MODE bound to: 0 - type: integer 
+	Parameter C_TX_DATA_ENCODING bound to: 0 - type: integer 
+	Parameter C_TX_ENABLE bound to: 1 - type: integer 
+	Parameter C_TX_INT_DATA_WIDTH bound to: 40 - type: integer 
+	Parameter C_TX_MASTER_CHANNEL_IDX bound to: 108 - type: integer 
+	Parameter C_TX_OUTCLK_BUFG_GT_DIV bound to: 1 - type: integer 
+	Parameter C_TX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter C_TX_USER_CLOCKING_CONTENTS bound to: 0 - type: integer 
+	Parameter C_TX_USER_CLOCKING_INSTANCE_CTRL bound to: 0 - type: integer 
+	Parameter C_TX_USER_CLOCKING_RATIO_FUSRCLK_FUSRCLK2 bound to: 2 - type: integer 
+	Parameter C_TX_USER_CLOCKING_SOURCE bound to: 0 - type: integer 
+	Parameter C_TX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter P_COMMON_ENABLE bound to: 48'b000000000000000000011000000000000000000000000000 
+	Parameter P_TX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
+	Parameter P_RX_MASTER_CH_PACKED_IDX bound to: 0 - type: integer 
+	Parameter P_USE_CPLL_CAL bound to: 0 - type: integer 
+	Parameter P_CPLL_CAL_FREQ_COUNT_WINDOW bound to: 16'b0011111010000000 
+	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD bound to: 18'b000000101010111110 
+	Parameter P_CPLL_CAL_WAIT_DEASSERT_CPLLPD bound to: 16'b0000000100000000 
+	Parameter P_CPLL_CAL_TXOUTCLK_PERIOD_DIV100 bound to: 18'b000000000000011100 
+	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001110000111010100100 
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_0_gthe3_common_wrapper' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe3_common_wrapper.v:56]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gthe3_common' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_6_gthe3_common.v:55]
+	Parameter GTHE3_COMMON_BIAS_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_BIAS_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_BIAS_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_BIAS_CFG3 bound to: 16'b0000000001000000 
+	Parameter GTHE3_COMMON_BIAS_CFG4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_BIAS_CFG_RSVD bound to: 10'b0000000000 
+	Parameter GTHE3_COMMON_COMMON_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_COMMON_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_POR_CFG bound to: 16'b0000000000000100 
+	Parameter GTHE3_COMMON_QPLL0_CFG0 bound to: 16'b0011001000011100 
+	Parameter GTHE3_COMMON_QPLL0_CFG1 bound to: 16'b0001000000011000 
+	Parameter GTHE3_COMMON_QPLL0_CFG1_G3 bound to: 16'b0001000000011000 
+	Parameter GTHE3_COMMON_QPLL0_CFG2 bound to: 16'b0000000001001000 
+	Parameter GTHE3_COMMON_QPLL0_CFG2_G3 bound to: 16'b0000000001001000 
+	Parameter GTHE3_COMMON_QPLL0_CFG3 bound to: 16'b0000000100100000 
+	Parameter GTHE3_COMMON_QPLL0_CFG4 bound to: 16'b0000000000011011 
+	Parameter GTHE3_COMMON_QPLL0_CP bound to: 10'b0111111111 
+	Parameter GTHE3_COMMON_QPLL0_CP_G3 bound to: 10'b1111111111 
+	Parameter GTHE3_COMMON_QPLL0_FBDIV bound to: 100 - type: integer 
+	Parameter GTHE3_COMMON_QPLL0_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter GTHE3_COMMON_QPLL0_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter GTHE3_COMMON_QPLL0_INIT_CFG1 bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_QPLL0_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter GTHE3_COMMON_QPLL0_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter GTHE3_COMMON_QPLL0_LPF bound to: 10'b1111111100 
+	Parameter GTHE3_COMMON_QPLL0_LPF_G3 bound to: 10'b0000010101 
+	Parameter GTHE3_COMMON_QPLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter GTHE3_COMMON_QPLL0_SDM_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL0_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL0_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL1_CFG0 bound to: 16'b0011001000011100 
+	Parameter GTHE3_COMMON_QPLL1_CFG1 bound to: 16'b0001000000011000 
+	Parameter GTHE3_COMMON_QPLL1_CFG1_G3 bound to: 16'b0001000000011000 
+	Parameter GTHE3_COMMON_QPLL1_CFG2 bound to: 16'b0000000001000000 
+	Parameter GTHE3_COMMON_QPLL1_CFG2_G3 bound to: 16'b0000000001000000 
+	Parameter GTHE3_COMMON_QPLL1_CFG3 bound to: 16'b0000000100100000 
+	Parameter GTHE3_COMMON_QPLL1_CFG4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL1_CP bound to: 10'b0001111111 
+	Parameter GTHE3_COMMON_QPLL1_CP_G3 bound to: 10'b1111111111 
+	Parameter GTHE3_COMMON_QPLL1_FBDIV bound to: 66 - type: integer 
+	Parameter GTHE3_COMMON_QPLL1_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter GTHE3_COMMON_QPLL1_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter GTHE3_COMMON_QPLL1_INIT_CFG1 bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_QPLL1_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter GTHE3_COMMON_QPLL1_LOCK_CFG_G3 bound to: 16'b0010000111101000 
+	Parameter GTHE3_COMMON_QPLL1_LPF bound to: 10'b1111111100 
+	Parameter GTHE3_COMMON_QPLL1_LPF_G3 bound to: 10'b0000010101 
+	Parameter GTHE3_COMMON_QPLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter GTHE3_COMMON_QPLL1_SDM_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL1_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_QPLL1_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_RSVD_ATTR2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_RSVD_ATTR3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_RXRECCLKOUT0_SEL bound to: 2'b00 
+	Parameter GTHE3_COMMON_RXRECCLKOUT1_SEL bound to: 2'b00 
+	Parameter GTHE3_COMMON_SARC_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_SARC_SEL bound to: 1'b0 
+	Parameter GTHE3_COMMON_SDM0DATA1_0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_SDM0DATA1_1 bound to: 9'b000000000 
+	Parameter GTHE3_COMMON_SDM0INITSEED0_0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_SDM0INITSEED0_1 bound to: 9'b000000000 
+	Parameter GTHE3_COMMON_SDM0_DATA_PIN_SEL bound to: 1'b0 
+	Parameter GTHE3_COMMON_SDM0_WIDTH_PIN_SEL bound to: 1'b0 
+	Parameter GTHE3_COMMON_SDM1DATA1_0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_SDM1DATA1_1 bound to: 9'b000000000 
+	Parameter GTHE3_COMMON_SDM1INITSEED0_0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_SDM1INITSEED0_1 bound to: 9'b000000000 
+	Parameter GTHE3_COMMON_SDM1_DATA_PIN_SEL bound to: 1'b0 
+	Parameter GTHE3_COMMON_SDM1_WIDTH_PIN_SEL bound to: 1'b0 
+	Parameter GTHE3_COMMON_SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter GTHE3_COMMON_SIM_VERSION bound to: 2 - type: integer 
+	Parameter GTHE3_COMMON_BGBYPASSB_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGMONITORENB_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGPDB_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGRCALOVRD_VAL bound to: 5'b11111 
+	Parameter GTHE3_COMMON_BGRCALOVRDENB_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_DRPADDR_VAL bound to: 9'b000000000 
+	Parameter GTHE3_COMMON_DRPCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPDI_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_COMMON_DRPEN_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPWE_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTGREFCLK0_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTGREFCLK1_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK00_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK01_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK10_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK11_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_PMARSVD0_VAL bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_PMARSVD1_VAL bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_QPLL0CLKRSVD0_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0CLKRSVD1_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0LOCKDETCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0LOCKEN_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_QPLL0PD_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0REFCLKSEL_VAL bound to: 3'b001 
+	Parameter GTHE3_COMMON_QPLL0RESET_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1CLKRSVD0_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1CLKRSVD1_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1LOCKDETCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1LOCKEN_VAL bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1PD_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_QPLL1REFCLKSEL_VAL bound to: 3'b001 
+	Parameter GTHE3_COMMON_QPLL1RESET_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_QPLLRSVD1_VAL bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_QPLLRSVD2_VAL bound to: 5'b00000 
+	Parameter GTHE3_COMMON_QPLLRSVD3_VAL bound to: 5'b00000 
+	Parameter GTHE3_COMMON_QPLLRSVD4_VAL bound to: 8'b00000000 
+	Parameter GTHE3_COMMON_RCALENB_VAL bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGBYPASSB_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGMONITORENB_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGPDB_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGRCALOVRD_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_BGRCALOVRDENB_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_DRPADDR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPDI_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_DRPWE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTGREFCLK0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTGREFCLK1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTNORTHREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK00_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK01_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK10_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_GTSOUTHREFCLK11_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_PMARSVD0_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_PMARSVD1_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_COMMON_QPLL0CLKRSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0CLKRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0LOCKDETCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0LOCKEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0PD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0REFCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL0RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1CLKRSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1CLKRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1LOCKDETCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1LOCKEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1PD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1REFCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLL1RESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLLRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLLRSVD2_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLLRSVD3_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_QPLLRSVD4_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_COMMON_RCALENB_TIE_EN bound to: 1'b1 
+INFO: [Synth 8-638] synthesizing module 'GTHE3_COMMON' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:6828]
+	Parameter BIAS_CFG0 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG1 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG2 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG3 bound to: 16'b0000000001000000 
+	Parameter BIAS_CFG4 bound to: 16'b0000000000000000 
+	Parameter BIAS_CFG_RSVD bound to: 10'b0000000000 
+	Parameter COMMON_CFG0 bound to: 16'b0000000000000000 
+	Parameter COMMON_CFG1 bound to: 16'b0000000000000000 
+	Parameter POR_CFG bound to: 16'b0000000000000100 
+	Parameter QPLL0_CFG0 bound to: 16'b0011001000011100 
+	Parameter QPLL0_CFG1 bound to: 16'b0001000000011000 
+	Parameter QPLL0_CFG1_G3 bound to: 16'b0001000000011000 
+	Parameter QPLL0_CFG2 bound to: 16'b0000000001001000 
+	Parameter QPLL0_CFG2_G3 bound to: 16'b0000000001001000 
+	Parameter QPLL0_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL0_CFG4 bound to: 16'b0000000000011011 
+	Parameter QPLL0_CP bound to: 10'b0111111111 
+	Parameter QPLL0_CP_G3 bound to: 10'b1111111111 
+	Parameter QPLL0_FBDIV bound to: 100 - type: integer 
+	Parameter QPLL0_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter QPLL0_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL0_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL0_LOCK_CFG bound to: 16'b0010010111101000 
+	Parameter QPLL0_LOCK_CFG_G3 bound to: 16'b0010010111101000 
+	Parameter QPLL0_LPF bound to: 10'b1111111100 
+	Parameter QPLL0_LPF_G3 bound to: 10'b0000010101 
+	Parameter QPLL0_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL0_SDM_CFG0 bound to: 16'b0000000000000000 
+	Parameter QPLL0_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL0_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter QPLL1_CFG0 bound to: 16'b0011001000011100 
+	Parameter QPLL1_CFG1 bound to: 16'b0001000000011000 
+	Parameter QPLL1_CFG1_G3 bound to: 16'b0001000000011000 
+	Parameter QPLL1_CFG2 bound to: 16'b0000000001000000 
+	Parameter QPLL1_CFG2_G3 bound to: 16'b0000000001000000 
+	Parameter QPLL1_CFG3 bound to: 16'b0000000100100000 
+	Parameter QPLL1_CFG4 bound to: 16'b0000000000000000 
+	Parameter QPLL1_CP bound to: 10'b0001111111 
+	Parameter QPLL1_CP_G3 bound to: 10'b1111111111 
+	Parameter QPLL1_FBDIV bound to: 66 - type: integer 
+	Parameter QPLL1_FBDIV_G3 bound to: 80 - type: integer 
+	Parameter QPLL1_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter QPLL1_INIT_CFG1 bound to: 8'b00000000 
+	Parameter QPLL1_LOCK_CFG bound to: 16'b0010000111101000 
+	Parameter QPLL1_LOCK_CFG_G3 bound to: 16'b0010000111101000 
+	Parameter QPLL1_LPF bound to: 10'b1111111100 
+	Parameter QPLL1_LPF_G3 bound to: 10'b0000010101 
+	Parameter QPLL1_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter QPLL1_SDM_CFG0 bound to: 16'b0000000000000000 
+	Parameter QPLL1_SDM_CFG1 bound to: 16'b0000000000000000 
+	Parameter QPLL1_SDM_CFG2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR0 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR1 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR2 bound to: 16'b0000000000000000 
+	Parameter RSVD_ATTR3 bound to: 16'b0000000000000000 
+	Parameter RXRECCLKOUT0_SEL bound to: 2'b00 
+	Parameter RXRECCLKOUT1_SEL bound to: 2'b00 
+	Parameter SARC_EN bound to: 1'b1 
+	Parameter SARC_SEL bound to: 1'b0 
+	Parameter SDM0DATA1_0 bound to: 16'b0000000000000000 
+	Parameter SDM0DATA1_1 bound to: 9'b000000000 
+	Parameter SDM0INITSEED0_0 bound to: 16'b0000000000000000 
+	Parameter SDM0INITSEED0_1 bound to: 9'b000000000 
+	Parameter SDM0_DATA_PIN_SEL bound to: 1'b0 
+	Parameter SDM0_WIDTH_PIN_SEL bound to: 1'b0 
+	Parameter SDM1DATA1_0 bound to: 16'b0000000000000000 
+	Parameter SDM1DATA1_1 bound to: 9'b000000000 
+	Parameter SDM1INITSEED0_0 bound to: 16'b0000000000000000 
+	Parameter SDM1INITSEED0_1 bound to: 9'b000000000 
+	Parameter SDM1_DATA_PIN_SEL bound to: 1'b0 
+	Parameter SDM1_WIDTH_PIN_SEL bound to: 1'b0 
+	Parameter SIM_MODE bound to: FAST - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_VERSION bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'GTHE3_COMMON' (1#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:6828]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gthe3_common' (2#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_6_gthe3_common.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_0_gthe3_common_wrapper' (3#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe3_common_wrapper.v:56]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_0_gthe3_channel_wrapper' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe3_channel_wrapper.v:56]
+	Parameter MASTER_EN bound to: 0 - type: integer 
+	Parameter NUM_CHANNELS bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gthe3_channel' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_6_gthe3_channel.v:55]
+	Parameter NUM_CHANNELS bound to: 4 - type: integer 
+	Parameter GTHE3_CHANNEL_ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_ACJTAG_MODE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_ACJTAG_RESET bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_ADAPT_CFG0 bound to: 16'b1111100000000000 
+	Parameter GTHE3_CHANNEL_ADAPT_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_ALIGN_COMMA_ENABLE bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_ALIGN_MCOMMA_DET bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter GTHE3_CHANNEL_ALIGN_PCOMMA_DET bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter GTHE3_CHANNEL_A_RXOSCALRESET bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_A_RXPROGDIVRESET bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_A_TXPROGDIVRESET bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CBCC_DATA_SOURCE_SEL bound to: ENCODED - type: string 
+	Parameter GTHE3_CHANNEL_CDR_SWAP_MODE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_CLK_COR_MAX_LAT bound to: 20 - type: integer 
+	Parameter GTHE3_CHANNEL_CLK_COR_MIN_LAT bound to: 18 - type: integer 
+	Parameter GTHE3_CHANNEL_CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_CPLL_CFG0 bound to: 16'b0110011111111000 
+	Parameter GTHE3_CHANNEL_CPLL_CFG1 bound to: 16'b1010010010101100 
+	Parameter GTHE3_CHANNEL_CPLL_CFG2 bound to: 16'b1111000000000111 
+	Parameter GTHE3_CHANNEL_CPLL_CFG3 bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_CPLL_FBDIV bound to: 2 - type: integer 
+	Parameter GTHE3_CHANNEL_CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter GTHE3_CHANNEL_CPLL_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter GTHE3_CHANNEL_CPLL_INIT_CFG1 bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter GTHE3_CHANNEL_CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_DDI_CTRL bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_DDI_REALIGN_WAIT bound to: 15 - type: integer 
+	Parameter GTHE3_CHANNEL_DEC_MCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_DEC_PCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_DFE_D_X_REL_POS bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DFE_VCM_COMP_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DMONITOR_CFG0 bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_DMONITOR_CFG1 bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_ES_CONTROL bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_ES_EYE_SCAN_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter GTHE3_CHANNEL_ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter GTHE3_CHANNEL_ES_PRESCALE bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_ES_QUALIFIER0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUALIFIER1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUALIFIER2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUALIFIER3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUALIFIER4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUAL_MASK0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUAL_MASK1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUAL_MASK2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUAL_MASK3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_QUAL_MASK4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_SDATA_MASK0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_SDATA_MASK1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_SDATA_MASK2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_SDATA_MASK3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_ES_SDATA_MASK4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_EVODD_PHI_CFG bound to: 11'b00000000000 
+	Parameter GTHE3_CHANNEL_EYE_SCAN_SWAP_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter GTHE3_CHANNEL_FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_GEARBOX_MODE bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_GM_BIAS_SELECT bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LOCAL_MASTER bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_OOBDIVCTL bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_OOB_PWRUP bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCI3_AUTO_REALIGN bound to: OVR_1K_BLK - type: string 
+	Parameter GTHE3_CHANNEL_PCI3_PIPE_RX_ELECIDLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ASYNC_EBUF_BYPASS bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ELECIDLE_EI2_ENABLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ELECIDLE_H2L_COUNT bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ELECIDLE_H2L_DISABLE bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ELECIDLE_HI_COUNT bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_PCI3_RX_ELECIDLE_LP4_DISABLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCI3_RX_FIFO_DISABLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIE_BUFG_DIV_CTRL bound to: 16'b0001000000000000 
+	Parameter GTHE3_CHANNEL_PCIE_RXPCS_CFG_GEN3 bound to: 16'b0000001010100100 
+	Parameter GTHE3_CHANNEL_PCIE_RXPMA_CFG bound to: 16'b0000000000001010 
+	Parameter GTHE3_CHANNEL_PCIE_TXPCS_CFG_GEN3 bound to: 16'b0010010010100100 
+	Parameter GTHE3_CHANNEL_PCIE_TXPMA_CFG bound to: 16'b0000000000001010 
+	Parameter GTHE3_CHANNEL_PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_PCS_RSVD0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_PCS_RSVD1 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter GTHE3_CHANNEL_PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter GTHE3_CHANNEL_PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter GTHE3_CHANNEL_PLL_SEL_MODE_GEN12 bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_PLL_SEL_MODE_GEN3 bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_PMA_RSV1 bound to: 16'b1111100000000000 
+	Parameter GTHE3_CHANNEL_PROCESS_PAR bound to: 3'b010 
+	Parameter GTHE3_CHANNEL_RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RESET_POWERSAVE_DISABLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXBUFRESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter GTHE3_CHANNEL_RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter GTHE3_CHANNEL_RXBUF_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_THRESH_OVFLW bound to: 0 - type: integer 
+	Parameter GTHE3_CHANNEL_RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_RXBUF_THRESH_UNDFLW bound to: 0 - type: integer 
+	Parameter GTHE3_CHANNEL_RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter GTHE3_CHANNEL_RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG0_GEN3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG1_GEN3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG2 bound to: 16'b0000011111100110 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG2_GEN3 bound to: 16'b0000011111100110 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG3_GEN3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG4 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG4_GEN3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG5 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_CFG5_GEN3 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDR_LOCK_CFG0 bound to: 16'b0100010010000000 
+	Parameter GTHE3_CHANNEL_RXCDR_LOCK_CFG1 bound to: 16'b0101111111111111 
+	Parameter GTHE3_CHANNEL_RXCDR_LOCK_CFG2 bound to: 16'b0111011111000011 
+	Parameter GTHE3_CHANNEL_RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCFOK_CFG0 bound to: 16'b0100000000000000 
+	Parameter GTHE3_CHANNEL_RXCFOK_CFG1 bound to: 16'b0000000001100101 
+	Parameter GTHE3_CHANNEL_RXCFOK_CFG2 bound to: 16'b0000000000101110 
+	Parameter GTHE3_CHANNEL_RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter GTHE3_CHANNEL_RXDFELPM_KL_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFELPM_KL_CFG1 bound to: 16'b0000000000110010 
+	Parameter GTHE3_CHANNEL_RXDFELPM_KL_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_CFG0 bound to: 16'b0000101000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_GC_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_GC_CFG1 bound to: 16'b0111100001100000 
+	Parameter GTHE3_CHANNEL_RXDFE_GC_CFG2 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H2_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H2_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H3_CFG0 bound to: 16'b0100000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H3_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H4_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H4_CFG1 bound to: 16'b0000000000000011 
+	Parameter GTHE3_CHANNEL_RXDFE_H5_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H5_CFG1 bound to: 16'b0000000000000011 
+	Parameter GTHE3_CHANNEL_RXDFE_H6_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H6_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H7_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H7_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H8_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H8_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H9_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_H9_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HA_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HA_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HB_CFG0 bound to: 16'b0010000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HB_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HC_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HC_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HD_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HD_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HE_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HE_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HF_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_HF_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_OS_CFG0 bound to: 16'b1000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_OS_CFG1 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_UT_CFG0 bound to: 16'b1000000000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_UT_CFG1 bound to: 16'b0000000000000011 
+	Parameter GTHE3_CHANNEL_RXDFE_VP_CFG0 bound to: 16'b1010101000000000 
+	Parameter GTHE3_CHANNEL_RXDFE_VP_CFG1 bound to: 16'b0000000000110011 
+	Parameter GTHE3_CHANNEL_RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter GTHE3_CHANNEL_RXDLY_LCFG bound to: 16'b0000000000110000 
+	Parameter GTHE3_CHANNEL_RXELECIDLE_CFG bound to: Sigcfg_4 - type: string 
+	Parameter GTHE3_CHANNEL_RXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter GTHE3_CHANNEL_RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter GTHE3_CHANNEL_RXLPM_CFG bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXLPM_GC_CFG bound to: 16'b0001000000000000 
+	Parameter GTHE3_CHANNEL_RXLPM_KH_CFG0 bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXLPM_KH_CFG1 bound to: 16'b0000000000000010 
+	Parameter GTHE3_CHANNEL_RXLPM_OS_CFG0 bound to: 16'b1000000000000000 
+	Parameter GTHE3_CHANNEL_RXLPM_OS_CFG1 bound to: 16'b0000000000000010 
+	Parameter GTHE3_CHANNEL_RXOOB_CFG bound to: 9'b000000110 
+	Parameter GTHE3_CHANNEL_RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter GTHE3_CHANNEL_RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_RXOUT_DIV bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_RXPCSRESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_RXPHBEACON_CFG bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_RXPHDLY_CFG bound to: 16'b0010000000100000 
+	Parameter GTHE3_CHANNEL_RXPHSAMP_CFG bound to: 16'b0010000100000000 
+	Parameter GTHE3_CHANNEL_RXPHSLIP_CFG bound to: 16'b0110011000100010 
+	Parameter GTHE3_CHANNEL_RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_RXPI_CFG0 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXPI_CFG1 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXPI_CFG2 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXPI_CFG3 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXPI_CFG4 bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPI_CFG5 bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPI_CFG6 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RXPI_LPM bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPI_VREFSEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPMACLK_SEL bound to: DATA - type: string 
+	Parameter GTHE3_CHANNEL_RXPMARESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPRBS_LINKACQ_CNT bound to: 15 - type: integer 
+	Parameter GTHE3_CHANNEL_RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter GTHE3_CHANNEL_RXSLIDE_MODE bound to: PCS - type: string 
+	Parameter GTHE3_CHANNEL_RXSYNC_MULTILANE bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXSYNC_OVRD bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_AFE_CM_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_BIAS_CFG0 bound to: 16'b0000101010110100 
+	Parameter GTHE3_CHANNEL_RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_RX_CAPFF_SARC_ENB bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_CLK25_DIV bound to: 6 - type: integer 
+	Parameter GTHE3_CHANNEL_RX_CLKMUX_EN bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RX_CLK_SLIP_OVRD bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_RX_CM_BUF_CFG bound to: 4'b1010 
+	Parameter GTHE3_CHANNEL_RX_CM_BUF_PD bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_CM_SEL bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_RX_CM_TRIM bound to: 4'b1010 
+	Parameter GTHE3_CHANNEL_RX_CTLE3_LPF bound to: 8'b00000001 
+	Parameter GTHE3_CHANNEL_RX_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter GTHE3_CHANNEL_RX_DDI_SEL bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_RX_DFELPM_CFG0 bound to: 4'b0110 
+	Parameter GTHE3_CHANNEL_RX_DFELPM_CFG1 bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RX_DFELPM_KLKH_AGC_STUP_EN bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RX_DFE_AGC_CFG0 bound to: 2'b10 
+	Parameter GTHE3_CHANNEL_RX_DFE_AGC_CFG1 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RX_DFE_KL_LPM_KH_CFG0 bound to: 2'b01 
+	Parameter GTHE3_CHANNEL_RX_DFE_KL_LPM_KH_CFG1 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RX_DFE_KL_LPM_KL_CFG0 bound to: 2'b01 
+	Parameter GTHE3_CHANNEL_RX_DFE_KL_LPM_KL_CFG1 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_RX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter GTHE3_CHANNEL_RX_EN_HI_LR bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RX_EYESCAN_VS_CODE bound to: 7'b0000000 
+	Parameter GTHE3_CHANNEL_RX_EYESCAN_VS_NEG_DIR bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_EYESCAN_VS_RANGE bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RX_EYESCAN_VS_UT_SIGN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_RX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_PROGDIV_CFG bound to: 0.000000 - type: float 
+	Parameter GTHE3_CHANNEL_RX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter GTHE3_CHANNEL_RX_SIG_VALID_DLY bound to: 11 - type: integer 
+	Parameter GTHE3_CHANNEL_RX_SUM_DFETAPREP_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_SUM_IREF_TUNE bound to: 4'b1100 
+	Parameter GTHE3_CHANNEL_RX_SUM_RES_CTRL bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_RX_SUM_VCMTUNE bound to: 4'b0000 
+	Parameter GTHE3_CHANNEL_RX_SUM_VCM_OVWR bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX_SUM_VREF_TUNE bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RX_TUNE_AFE_OS bound to: 2'b10 
+	Parameter GTHE3_CHANNEL_RX_WIDEMODE_CDR bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RX_XCLK_SEL bound to: RXUSR - type: string 
+	Parameter GTHE3_CHANNEL_SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter GTHE3_CHANNEL_SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_BURST_SEQ_LEN bound to: 4'b1110 
+	Parameter GTHE3_CHANNEL_SATA_BURST_VAL bound to: 3'b100 
+	Parameter GTHE3_CHANNEL_SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter GTHE3_CHANNEL_SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter GTHE3_CHANNEL_SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter GTHE3_CHANNEL_SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter GTHE3_CHANNEL_SHOW_REALIGN_COMMA bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_SIM_TX_EIDLE_DRIVE_LEVEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_SIM_VERSION bound to: 2 - type: integer 
+	Parameter GTHE3_CHANNEL_TAPDLY_SET_TX bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_TEMPERATUR_PAR bound to: 4'b0010 
+	Parameter GTHE3_CHANNEL_TERM_RCAL_CFG bound to: 15'b100001000010000 
+	Parameter GTHE3_CHANNEL_TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter GTHE3_CHANNEL_TST_RSV0 bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TST_RSV1 bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TXBUF_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter GTHE3_CHANNEL_TXDLY_CFG bound to: 16'b0000000000001001 
+	Parameter GTHE3_CHANNEL_TXDLY_LCFG bound to: 16'b0000000001010000 
+	Parameter GTHE3_CHANNEL_TXDRVBIAS_N bound to: 4'b1010 
+	Parameter GTHE3_CHANNEL_TXDRVBIAS_P bound to: 4'b1010 
+	Parameter GTHE3_CHANNEL_TXFIFO_ADDR_CFG bound to: LOW - type: string 
+	Parameter GTHE3_CHANNEL_TXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter GTHE3_CHANNEL_TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_TXOUT_DIV bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_TXPCSRESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_TXPHDLY_CFG0 bound to: 16'b0010000000100000 
+	Parameter GTHE3_CHANNEL_TXPHDLY_CFG1 bound to: 16'b0000000001110101 
+	Parameter GTHE3_CHANNEL_TXPH_CFG bound to: 16'b0000100110000000 
+	Parameter GTHE3_CHANNEL_TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_TXPI_CFG0 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_TXPI_CFG1 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_TXPI_CFG2 bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_TXPI_CFG3 bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPI_CFG4 bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPI_CFG5 bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TXPI_GRAY_SEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPI_LPM bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter GTHE3_CHANNEL_TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TXPI_SYNFREQ_PPM bound to: 3'b001 
+	Parameter GTHE3_CHANNEL_TXPI_VREFSEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPMARESET_TIME bound to: 5'b00011 
+	Parameter GTHE3_CHANNEL_TXSYNC_MULTILANE bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_TXSYNC_OVRD bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_CLK25_DIV bound to: 6 - type: integer 
+	Parameter GTHE3_CHANNEL_TX_CLKMUX_EN bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_TX_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter GTHE3_CHANNEL_TX_DCD_CFG bound to: 6'b000010 
+	Parameter GTHE3_CHANNEL_TX_DCD_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_DEEMPH0 bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_TX_DEEMPH1 bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_TX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter GTHE3_CHANNEL_TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter GTHE3_CHANNEL_TX_EIDLE_ASSERT_DELAY bound to: 3'b100 
+	Parameter GTHE3_CHANNEL_TX_EIDLE_DEASSERT_DELAY bound to: 3'b011 
+	Parameter GTHE3_CHANNEL_TX_EML_PHI_TUNE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_IDLE_DATA_ZERO bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter GTHE3_CHANNEL_TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter GTHE3_CHANNEL_TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_FULL_0 bound to: 7'b1001111 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_FULL_1 bound to: 7'b1001110 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_FULL_2 bound to: 7'b1001100 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_FULL_3 bound to: 7'b1001010 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_FULL_4 bound to: 7'b1001000 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_LOW_1 bound to: 7'b1000101 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_LOW_2 bound to: 7'b1000011 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_LOW_3 bound to: 7'b1000010 
+	Parameter GTHE3_CHANNEL_TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter GTHE3_CHANNEL_TX_MODE_SEL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TX_PMADATA_OPT bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_PROGCLK_SEL bound to: PREPI - type: string 
+	Parameter GTHE3_CHANNEL_TX_PROGDIV_CFG bound to: 20.000000 - type: float 
+	Parameter GTHE3_CHANNEL_TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_RXDETECT_CFG bound to: 14'b00000000110010 
+	Parameter GTHE3_CHANNEL_TX_RXDETECT_REF bound to: 3'b100 
+	Parameter GTHE3_CHANNEL_TX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter GTHE3_CHANNEL_TX_SARC_LPBK_ENB bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX_XCLK_SEL bound to: TXUSR - type: string 
+	Parameter GTHE3_CHANNEL_USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_WB_MODE bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_CFGRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CLKRSVD0_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CLKRSVD1_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLLOCKDETCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLLOCKEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLPD_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_CPLLREFCLKSEL_VAL bound to: 3'b001 
+	Parameter GTHE3_CHANNEL_CPLLRESET_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_DMONFIFORESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DMONITORCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPADDR_VAL bound to: 9'b000000000 
+	Parameter GTHE3_CHANNEL_DRPCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPDI_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_DRPEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPWE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHICALDONE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHICALSTART_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIDRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIDWREN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIXRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIXWREN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANTRIGGER_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTGREFCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTHRXN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTHRXP_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTNORTHREFCLK0_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTNORTHREFCLK1_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTREFCLK0_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTREFCLK1_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTRESETSEL_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTRSVD_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_GTRXRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTSOUTHREFCLK0_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTSOUTHREFCLK1_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTTXRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LOOPBACK_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_LPBKRXTXSEREN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LPBKTXRXSEREN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIEEQRXEQADAPTDONE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIERSTIDLE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIERSTTXSYNCSTART_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIEUSERRATEDONE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCSRSVDIN_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_PCSRSVDIN2_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_PMARSVDIN_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_QPLL0CLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL0REFCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL1CLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL1REFCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RESETOVRD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RSTCLKENTX_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX8B10BEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXBUFRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRFREQRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDROVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRRESETRSV_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDI_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_RXCHBONDLEVEL_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RXCHBONDMASTER_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDSLAVE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCOMMADETEN_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXDFEAGCCTRL_VAL bound to: 2'b01 
+	Parameter GTHE3_CHANNEL_RXDFEAGCHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEAGCOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELFHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELFOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELPMRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP10HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP10OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP11HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP11OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP12HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP12OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP13HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP13OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP14HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP14OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP15HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP15OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP2HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP2OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP3HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP3OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP4HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP4OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP5HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP5OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP6HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP6OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP7HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP7OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP8HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP8OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP9HOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP9OVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEUTHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEUTOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVPHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVPOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVSEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEXYDEN_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXDLYBYPASS_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYSRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXELECIDLEMODE_VAL bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_RXGEARBOXSLIP_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLATCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMEN_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXLPMGCHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMGCOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMHFHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMHFOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMLFHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMLFKLOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMOSHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMOSOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXMCOMMAALIGNEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXMONITORSEL_VAL bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXOOBRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSCALRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTCFG_VAL bound to: 4'b1101 
+	Parameter GTHE3_CHANNEL_RXOSINTEN_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXOSINTHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTSTROBE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTTESTOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOUTCLKSEL_VAL bound to: 3'b010 
+	Parameter GTHE3_CHANNEL_RXPCOMMAALIGNEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPCSRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPD_VAL bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_RXPHALIGN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHALIGNEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHDLYPD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHDLYRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPLLCLKSEL_VAL bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_RXPMARESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPOLARITY_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPRBSCNTRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPRBSSEL_VAL bound to: 4'b0000 
+	Parameter GTHE3_CHANNEL_RXPROGDIVRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXQPIEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXRATE_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_RXRATEMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIDE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIPOUTCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIPPMA_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCALLIN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCIN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYSCLKSEL_VAL bound to: 2'b10 
+	Parameter GTHE3_CHANNEL_RXUSERRDY_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_RXUSRCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXUSRCLK2_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_SIGVALIDCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TSTIN_VAL bound to: 20'b00000000000000000000 
+	Parameter GTHE3_CHANNEL_TX8B10BBYPASS_VAL bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TX8B10BEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXBUFDIFFCTRL_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TXCOMINIT_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCOMSAS_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCOMWAKE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCTRL0_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_TXCTRL1_VAL bound to: 16'b0000000000000000 
+	Parameter GTHE3_CHANNEL_TXCTRL2_VAL bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TXDATA_VAL bound to: 128'b00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000 
+	Parameter GTHE3_CHANNEL_TXDATAEXTENDRSVD_VAL bound to: 8'b00000000 
+	Parameter GTHE3_CHANNEL_TXDEEMPH_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDETECTRX_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDIFFCTRL_VAL bound to: 4'b1100 
+	Parameter GTHE3_CHANNEL_TXDIFFPD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYBYPASS_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYHOLD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYSRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYUPDOWN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXELECIDLE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXHEADER_VAL bound to: 6'b000000 
+	Parameter GTHE3_CHANNEL_TXINHIBIT_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXLATCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXMAINCURSOR_VAL bound to: 7'b1000000 
+	Parameter GTHE3_CHANNEL_TXMARGIN_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TXOUTCLKSEL_VAL bound to: 3'b101 
+	Parameter GTHE3_CHANNEL_TXPCSRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPD_VAL bound to: 2'b00 
+	Parameter GTHE3_CHANNEL_TXPDELECIDLEMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHALIGN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHALIGNEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYPD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYTSTCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHINIT_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMOVRDEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMPD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMSEL_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMSTEPSIZE_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_TXPISOPD_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPLLCLKSEL_VAL bound to: 2'b11 
+	Parameter GTHE3_CHANNEL_TXPMARESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPOLARITY_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPOSTCURSOR_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_TXPOSTCURSORINV_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRBSFORCEERR_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRBSSEL_VAL bound to: 4'b0000 
+	Parameter GTHE3_CHANNEL_TXPRECURSOR_VAL bound to: 5'b00000 
+	Parameter GTHE3_CHANNEL_TXPRECURSORINV_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPROGDIVRESET_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPIBIASEN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPISTRONGPDOWN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPIWEAKPUP_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXRATE_VAL bound to: 3'b000 
+	Parameter GTHE3_CHANNEL_TXRATEMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSEQUENCE_VAL bound to: 7'b0000000 
+	Parameter GTHE3_CHANNEL_TXSWING_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCALLIN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCIN_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCMODE_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYSCLKSEL_VAL bound to: 2'b10 
+	Parameter GTHE3_CHANNEL_TXUSERRDY_VAL bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_TXUSRCLK_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXUSRCLK2_VAL bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CFGRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CLKRSVD0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CLKRSVD1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLLOCKDETCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLLOCKEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLREFCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_CPLLRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DMONFIFORESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DMONITORCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPADDR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPDI_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_DRPWE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHICALDONE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHICALSTART_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIDRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIDWREN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIXRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EVODDPHIXWREN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_EYESCANTRIGGER_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTGREFCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTHRXN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTHRXP_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTNORTHREFCLK0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTNORTHREFCLK1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTREFCLK0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTREFCLK1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTRESETSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTRSVD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTRXRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTSOUTHREFCLK0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTSOUTHREFCLK1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_GTTXRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LOOPBACK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LPBKRXTXSEREN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_LPBKTXRXSEREN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIEEQRXEQADAPTDONE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIERSTIDLE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIERSTTXSYNCSTART_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCIEUSERRATEDONE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCSRSVDIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PCSRSVDIN2_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_PMARSVDIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL0CLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL0REFCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL1CLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_QPLL1REFCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RESETOVRD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RSTCLKENTX_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RX8B10BEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXBUFRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRFREQRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDROVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCDRRESETRSV_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDI_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDLEVEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDMASTER_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCHBONDSLAVE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXCOMMADETEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEAGCCTRL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEAGCHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEAGCOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELFHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELFOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFELPMRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP10HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP10OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP11HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP11OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP12HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP12OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP13HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP13OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP14HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP14OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP15HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP15OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP2HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP2OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP3HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP3OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP4HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP4OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP5HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP5OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP6HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP6OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP7HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP7OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP8HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP8OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP9HOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFETAP9OVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEUTHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEUTOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVPHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVPOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEVSEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDFEXYDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYBYPASS_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXDLYSRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXELECIDLEMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXGEARBOXSLIP_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLATCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMGCHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMGCOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMHFHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMHFOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMLFHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMLFKLOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMOSHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXLPMOSOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXMCOMMAALIGNEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXMONITORSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOOBRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSCALRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTCFG_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTSTROBE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSINTTESTOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOSOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXOUTCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPCOMMAALIGNEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPCSRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHALIGN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHALIGNEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHDLYPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHDLYRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPHOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPLLCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPMARESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPOLARITY_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPRBSCNTRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPRBSSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXPROGDIVRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXQPIEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXRATE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXRATEMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIDE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIPOUTCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSLIPPMA_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCALLIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYNCMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXSYSCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXUSERRDY_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXUSRCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_RXUSRCLK2_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_SIGVALIDCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TSTIN_TIE_EN bound to: 1'b1 
+	Parameter GTHE3_CHANNEL_TX8B10BBYPASS_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TX8B10BEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXBUFDIFFCTRL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCOMINIT_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCOMSAS_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCOMWAKE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCTRL0_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCTRL1_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXCTRL2_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDATA_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDATAEXTENDRSVD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDEEMPH_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDETECTRX_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDIFFCTRL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDIFFPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYBYPASS_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYHOLD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYSRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXDLYUPDOWN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXELECIDLE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXHEADER_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXINHIBIT_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXLATCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXMAINCURSOR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXMARGIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXOUTCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPCSRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPDELECIDLEMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHALIGN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHALIGNEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHDLYTSTCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHINIT_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPHOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMOVRDEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPIPPMSTEPSIZE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPISOPD_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPLLCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPMARESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPOLARITY_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPOSTCURSOR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPOSTCURSORINV_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRBSFORCEERR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRBSSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRECURSOR_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPRECURSORINV_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXPROGDIVRESET_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPIBIASEN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPISTRONGPDOWN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXQPIWEAKPUP_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXRATE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXRATEMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSEQUENCE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSWING_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCALLIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCIN_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYNCMODE_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXSYSCLKSEL_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXUSERRDY_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXUSRCLK_TIE_EN bound to: 1'b0 
+	Parameter GTHE3_CHANNEL_TXUSRCLK2_TIE_EN bound to: 1'b0 
+INFO: [Synth 8-638] synthesizing module 'GTHE3_CHANNEL' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:5776]
+	Parameter ACJTAG_DEBUG_MODE bound to: 1'b0 
+	Parameter ACJTAG_MODE bound to: 1'b0 
+	Parameter ACJTAG_RESET bound to: 1'b0 
+	Parameter ADAPT_CFG0 bound to: 16'b1111100000000000 
+	Parameter ADAPT_CFG1 bound to: 16'b0000000000000000 
+	Parameter ALIGN_COMMA_DOUBLE bound to: FALSE - type: string 
+	Parameter ALIGN_COMMA_ENABLE bound to: 10'b0000000000 
+	Parameter ALIGN_COMMA_WORD bound to: 1 - type: integer 
+	Parameter ALIGN_MCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_MCOMMA_VALUE bound to: 10'b1010000011 
+	Parameter ALIGN_PCOMMA_DET bound to: FALSE - type: string 
+	Parameter ALIGN_PCOMMA_VALUE bound to: 10'b0101111100 
+	Parameter A_RXOSCALRESET bound to: 1'b0 
+	Parameter A_RXPROGDIVRESET bound to: 1'b0 
+	Parameter A_TXPROGDIVRESET bound to: 1'b0 
+	Parameter CBCC_DATA_SOURCE_SEL bound to: ENCODED - type: string 
+	Parameter CDR_SWAP_MODE_EN bound to: 1'b0 
+	Parameter CHAN_BOND_KEEP_ALIGN bound to: FALSE - type: string 
+	Parameter CHAN_BOND_MAX_SKEW bound to: 1 - type: integer 
+	Parameter CHAN_BOND_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CHAN_BOND_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CHAN_BOND_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CHAN_BOND_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CLK_CORRECT_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_KEEP_IDLE bound to: FALSE - type: string 
+	Parameter CLK_COR_MAX_LAT bound to: 20 - type: integer 
+	Parameter CLK_COR_MIN_LAT bound to: 18 - type: integer 
+	Parameter CLK_COR_PRECEDENCE bound to: TRUE - type: string 
+	Parameter CLK_COR_REPEAT_WAIT bound to: 0 - type: integer 
+	Parameter CLK_COR_SEQ_1_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_1_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_1 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_2 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_3 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_4 bound to: 10'b0000000000 
+	Parameter CLK_COR_SEQ_2_ENABLE bound to: 4'b1111 
+	Parameter CLK_COR_SEQ_2_USE bound to: FALSE - type: string 
+	Parameter CLK_COR_SEQ_LEN bound to: 1 - type: integer 
+	Parameter CPLL_CFG0 bound to: 16'b0110011111111000 
+	Parameter CPLL_CFG1 bound to: 16'b1010010010101100 
+	Parameter CPLL_CFG2 bound to: 16'b1111000000000111 
+	Parameter CPLL_CFG3 bound to: 6'b000000 
+	Parameter CPLL_FBDIV bound to: 2 - type: integer 
+	Parameter CPLL_FBDIV_45 bound to: 5 - type: integer 
+	Parameter CPLL_INIT_CFG0 bound to: 16'b0000001010110010 
+	Parameter CPLL_INIT_CFG1 bound to: 8'b00000000 
+	Parameter CPLL_LOCK_CFG bound to: 16'b0000000111101000 
+	Parameter CPLL_REFCLK_DIV bound to: 1 - type: integer 
+	Parameter DDI_CTRL bound to: 2'b00 
+	Parameter DDI_REALIGN_WAIT bound to: 15 - type: integer 
+	Parameter DEC_MCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_PCOMMA_DETECT bound to: FALSE - type: string 
+	Parameter DEC_VALID_COMMA_ONLY bound to: FALSE - type: string 
+	Parameter DFE_D_X_REL_POS bound to: 1'b0 
+	Parameter DFE_VCM_COMP_EN bound to: 1'b0 
+	Parameter DMONITOR_CFG0 bound to: 10'b0000000000 
+	Parameter DMONITOR_CFG1 bound to: 8'b00000000 
+	Parameter ES_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter ES_CONTROL bound to: 6'b000000 
+	Parameter ES_ERRDET_EN bound to: FALSE - type: string 
+	Parameter ES_EYE_SCAN_EN bound to: FALSE - type: string 
+	Parameter ES_HORZ_OFFSET bound to: 12'b000000000000 
+	Parameter ES_PMA_CFG bound to: 10'b0000000000 
+	Parameter ES_PRESCALE bound to: 5'b00000 
+	Parameter ES_QUALIFIER0 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER1 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER2 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER3 bound to: 16'b0000000000000000 
+	Parameter ES_QUALIFIER4 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK0 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK1 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK2 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK3 bound to: 16'b0000000000000000 
+	Parameter ES_QUAL_MASK4 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK0 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK1 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK2 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK3 bound to: 16'b0000000000000000 
+	Parameter ES_SDATA_MASK4 bound to: 16'b0000000000000000 
+	Parameter EVODD_PHI_CFG bound to: 11'b00000000000 
+	Parameter EYE_SCAN_SWAP_EN bound to: 1'b0 
+	Parameter FTS_DESKEW_SEQ_ENABLE bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_CFG bound to: 4'b1111 
+	Parameter FTS_LANE_DESKEW_EN bound to: FALSE - type: string 
+	Parameter GEARBOX_MODE bound to: 5'b00000 
+	Parameter GM_BIAS_SELECT bound to: 1'b0 
+	Parameter LOCAL_MASTER bound to: 1'b1 
+	Parameter OOBDIVCTL bound to: 2'b00 
+	Parameter OOB_PWRUP bound to: 1'b0 
+	Parameter PCI3_AUTO_REALIGN bound to: OVR_1K_BLK - type: string 
+	Parameter PCI3_PIPE_RX_ELECIDLE bound to: 1'b0 
+	Parameter PCI3_RX_ASYNC_EBUF_BYPASS bound to: 2'b00 
+	Parameter PCI3_RX_ELECIDLE_EI2_ENABLE bound to: 1'b0 
+	Parameter PCI3_RX_ELECIDLE_H2L_COUNT bound to: 6'b000000 
+	Parameter PCI3_RX_ELECIDLE_H2L_DISABLE bound to: 3'b000 
+	Parameter PCI3_RX_ELECIDLE_HI_COUNT bound to: 6'b000000 
+	Parameter PCI3_RX_ELECIDLE_LP4_DISABLE bound to: 1'b0 
+	Parameter PCI3_RX_FIFO_DISABLE bound to: 1'b0 
+	Parameter PCIE_BUFG_DIV_CTRL bound to: 16'b0001000000000000 
+	Parameter PCIE_RXPCS_CFG_GEN3 bound to: 16'b0000001010100100 
+	Parameter PCIE_RXPMA_CFG bound to: 16'b0000000000001010 
+	Parameter PCIE_TXPCS_CFG_GEN3 bound to: 16'b0010010010100100 
+	Parameter PCIE_TXPMA_CFG bound to: 16'b0000000000001010 
+	Parameter PCS_PCIE_EN bound to: FALSE - type: string 
+	Parameter PCS_RSVD0 bound to: 16'b0000000000000000 
+	Parameter PCS_RSVD1 bound to: 3'b000 
+	Parameter PD_TRANS_TIME_FROM_P2 bound to: 12'b000000111100 
+	Parameter PD_TRANS_TIME_NONE_P2 bound to: 8'b00011001 
+	Parameter PD_TRANS_TIME_TO_P2 bound to: 8'b01100100 
+	Parameter PLL_SEL_MODE_GEN12 bound to: 2'b11 
+	Parameter PLL_SEL_MODE_GEN3 bound to: 2'b11 
+	Parameter PMA_RSV1 bound to: 16'b1111100000000000 
+	Parameter PROCESS_PAR bound to: 3'b010 
+	Parameter RATE_SW_USE_DRP bound to: 1'b1 
+	Parameter RESET_POWERSAVE_DISABLE bound to: 1'b0 
+	Parameter RXBUFRESET_TIME bound to: 5'b00011 
+	Parameter RXBUF_ADDR_MODE bound to: FAST - type: string 
+	Parameter RXBUF_EIDLE_HI_CNT bound to: 4'b1000 
+	Parameter RXBUF_EIDLE_LO_CNT bound to: 4'b0000 
+	Parameter RXBUF_EN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_CB_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_RESET_ON_COMMAALIGN bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_EIDLE bound to: FALSE - type: string 
+	Parameter RXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter RXBUF_THRESH_OVFLW bound to: 0 - type: integer 
+	Parameter RXBUF_THRESH_OVRD bound to: FALSE - type: string 
+	Parameter RXBUF_THRESH_UNDFLW bound to: 0 - type: integer 
+	Parameter RXCDRFREQRESET_TIME bound to: 5'b00001 
+	Parameter RXCDRPHRESET_TIME bound to: 5'b00001 
+	Parameter RXCDR_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG0_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG1_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG2 bound to: 16'b0000011111100110 
+	Parameter RXCDR_CFG2_GEN3 bound to: 16'b0000011111100110 
+	Parameter RXCDR_CFG3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG3_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG4 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG4_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG5 bound to: 16'b0000000000000000 
+	Parameter RXCDR_CFG5_GEN3 bound to: 16'b0000000000000000 
+	Parameter RXCDR_FR_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCDR_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RXCDR_LOCK_CFG0 bound to: 16'b0100010010000000 
+	Parameter RXCDR_LOCK_CFG1 bound to: 16'b0101111111111111 
+	Parameter RXCDR_LOCK_CFG2 bound to: 16'b0111011111000011 
+	Parameter RXCDR_PH_RESET_ON_EIDLE bound to: 1'b0 
+	Parameter RXCFOK_CFG0 bound to: 16'b0100000000000000 
+	Parameter RXCFOK_CFG1 bound to: 16'b0000000001100101 
+	Parameter RXCFOK_CFG2 bound to: 16'b0000000000101110 
+	Parameter RXDFELPMRESET_TIME bound to: 7'b0001111 
+	Parameter RXDFELPM_KL_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFELPM_KL_CFG1 bound to: 16'b0000000000110010 
+	Parameter RXDFELPM_KL_CFG2 bound to: 16'b0000000000000000 
+	Parameter RXDFE_CFG0 bound to: 16'b0000101000000000 
+	Parameter RXDFE_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_GC_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_GC_CFG1 bound to: 16'b0111100001100000 
+	Parameter RXDFE_GC_CFG2 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H2_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H2_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H3_CFG0 bound to: 16'b0100000000000000 
+	Parameter RXDFE_H3_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H4_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H4_CFG1 bound to: 16'b0000000000000011 
+	Parameter RXDFE_H5_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H5_CFG1 bound to: 16'b0000000000000011 
+	Parameter RXDFE_H6_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H6_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H7_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H7_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H8_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H8_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_H9_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_H9_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HA_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_HA_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HB_CFG0 bound to: 16'b0010000000000000 
+	Parameter RXDFE_HB_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HC_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HC_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HD_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HD_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HE_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HE_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HF_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXDFE_HF_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_OS_CFG0 bound to: 16'b1000000000000000 
+	Parameter RXDFE_OS_CFG1 bound to: 16'b0000000000000000 
+	Parameter RXDFE_UT_CFG0 bound to: 16'b1000000000000000 
+	Parameter RXDFE_UT_CFG1 bound to: 16'b0000000000000011 
+	Parameter RXDFE_VP_CFG0 bound to: 16'b1010101000000000 
+	Parameter RXDFE_VP_CFG1 bound to: 16'b0000000000110011 
+	Parameter RXDLY_CFG bound to: 16'b0000000000011111 
+	Parameter RXDLY_LCFG bound to: 16'b0000000000110000 
+	Parameter RXELECIDLE_CFG bound to: Sigcfg_4 - type: string 
+	Parameter RXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter RXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter RXISCANRESET_TIME bound to: 5'b00001 
+	Parameter RXLPM_CFG bound to: 16'b0000000000000000 
+	Parameter RXLPM_GC_CFG bound to: 16'b0001000000000000 
+	Parameter RXLPM_KH_CFG0 bound to: 16'b0000000000000000 
+	Parameter RXLPM_KH_CFG1 bound to: 16'b0000000000000010 
+	Parameter RXLPM_OS_CFG0 bound to: 16'b1000000000000000 
+	Parameter RXLPM_OS_CFG1 bound to: 16'b0000000000000010 
+	Parameter RXOOB_CFG bound to: 9'b000000110 
+	Parameter RXOOB_CLK_CFG bound to: PMA - type: string 
+	Parameter RXOSCALRESET_TIME bound to: 5'b00011 
+	Parameter RXOUT_DIV bound to: 1 - type: integer 
+	Parameter RXPCSRESET_TIME bound to: 5'b00011 
+	Parameter RXPHBEACON_CFG bound to: 16'b0000000000000000 
+	Parameter RXPHDLY_CFG bound to: 16'b0010000000100000 
+	Parameter RXPHSAMP_CFG bound to: 16'b0010000100000000 
+	Parameter RXPHSLIP_CFG bound to: 16'b0110011000100010 
+	Parameter RXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter RXPI_CFG0 bound to: 2'b00 
+	Parameter RXPI_CFG1 bound to: 2'b00 
+	Parameter RXPI_CFG2 bound to: 2'b00 
+	Parameter RXPI_CFG3 bound to: 2'b00 
+	Parameter RXPI_CFG4 bound to: 1'b0 
+	Parameter RXPI_CFG5 bound to: 1'b0 
+	Parameter RXPI_CFG6 bound to: 3'b000 
+	Parameter RXPI_LPM bound to: 1'b0 
+	Parameter RXPI_VREFSEL bound to: 1'b0 
+	Parameter RXPMACLK_SEL bound to: DATA - type: string 
+	Parameter RXPMARESET_TIME bound to: 5'b00011 
+	Parameter RXPRBS_ERR_LOOPBACK bound to: 1'b0 
+	Parameter RXPRBS_LINKACQ_CNT bound to: 15 - type: integer 
+	Parameter RXSLIDE_AUTO_WAIT bound to: 7 - type: integer 
+	Parameter RXSLIDE_MODE bound to: PCS - type: string 
+	Parameter RXSYNC_MULTILANE bound to: 1'b1 
+	Parameter RXSYNC_OVRD bound to: 1'b0 
+	Parameter RXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter RX_AFE_CM_EN bound to: 1'b0 
+	Parameter RX_BIAS_CFG0 bound to: 16'b0000101010110100 
+	Parameter RX_BUFFER_CFG bound to: 6'b000000 
+	Parameter RX_CAPFF_SARC_ENB bound to: 1'b0 
+	Parameter RX_CLK25_DIV bound to: 6 - type: integer 
+	Parameter RX_CLKMUX_EN bound to: 1'b1 
+	Parameter RX_CLK_SLIP_OVRD bound to: 5'b00000 
+	Parameter RX_CM_BUF_CFG bound to: 4'b1010 
+	Parameter RX_CM_BUF_PD bound to: 1'b0 
+	Parameter RX_CM_SEL bound to: 2'b11 
+	Parameter RX_CM_TRIM bound to: 4'b1010 
+	Parameter RX_CTLE3_LPF bound to: 8'b00000001 
+	Parameter RX_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter RX_DDI_SEL bound to: 6'b000000 
+	Parameter RX_DEFER_RESET_BUF_EN bound to: TRUE - type: string 
+	Parameter RX_DFELPM_CFG0 bound to: 4'b0110 
+	Parameter RX_DFELPM_CFG1 bound to: 1'b1 
+	Parameter RX_DFELPM_KLKH_AGC_STUP_EN bound to: 1'b1 
+	Parameter RX_DFE_AGC_CFG0 bound to: 2'b10 
+	Parameter RX_DFE_AGC_CFG1 bound to: 3'b000 
+	Parameter RX_DFE_KL_LPM_KH_CFG0 bound to: 2'b01 
+	Parameter RX_DFE_KL_LPM_KH_CFG1 bound to: 3'b000 
+	Parameter RX_DFE_KL_LPM_KL_CFG0 bound to: 2'b01 
+	Parameter RX_DFE_KL_LPM_KL_CFG1 bound to: 3'b000 
+	Parameter RX_DFE_LPM_HOLD_DURING_EIDLE bound to: 1'b0 
+	Parameter RX_DISPERR_SEQ_MATCH bound to: TRUE - type: string 
+	Parameter RX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter RX_EN_HI_LR bound to: 1'b1 
+	Parameter RX_EYESCAN_VS_CODE bound to: 7'b0000000 
+	Parameter RX_EYESCAN_VS_NEG_DIR bound to: 1'b0 
+	Parameter RX_EYESCAN_VS_RANGE bound to: 2'b00 
+	Parameter RX_EYESCAN_VS_UT_SIGN bound to: 1'b0 
+	Parameter RX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter RX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter RX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter RX_PROGDIV_CFG bound to: 0.000000 - type: float 
+	Parameter RX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter RX_SIG_VALID_DLY bound to: 11 - type: integer 
+	Parameter RX_SUM_DFETAPREP_EN bound to: 1'b0 
+	Parameter RX_SUM_IREF_TUNE bound to: 4'b1100 
+	Parameter RX_SUM_RES_CTRL bound to: 2'b11 
+	Parameter RX_SUM_VCMTUNE bound to: 4'b0000 
+	Parameter RX_SUM_VCM_OVWR bound to: 1'b0 
+	Parameter RX_SUM_VREF_TUNE bound to: 3'b000 
+	Parameter RX_TUNE_AFE_OS bound to: 2'b10 
+	Parameter RX_WIDEMODE_CDR bound to: 1'b1 
+	Parameter RX_XCLK_SEL bound to: RXUSR - type: string 
+	Parameter SAS_MAX_COM bound to: 64 - type: integer 
+	Parameter SAS_MIN_COM bound to: 36 - type: integer 
+	Parameter SATA_BURST_SEQ_LEN bound to: 4'b1110 
+	Parameter SATA_BURST_VAL bound to: 3'b100 
+	Parameter SATA_CPLL_CFG bound to: VCO_3000MHZ - type: string 
+	Parameter SATA_EIDLE_VAL bound to: 3'b100 
+	Parameter SATA_MAX_BURST bound to: 8 - type: integer 
+	Parameter SATA_MAX_INIT bound to: 21 - type: integer 
+	Parameter SATA_MAX_WAKE bound to: 7 - type: integer 
+	Parameter SATA_MIN_BURST bound to: 4 - type: integer 
+	Parameter SATA_MIN_INIT bound to: 12 - type: integer 
+	Parameter SATA_MIN_WAKE bound to: 4 - type: integer 
+	Parameter SHOW_REALIGN_COMMA bound to: FALSE - type: string 
+	Parameter SIM_MODE bound to: FAST - type: string 
+	Parameter SIM_RECEIVER_DETECT_PASS bound to: TRUE - type: string 
+	Parameter SIM_RESET_SPEEDUP bound to: TRUE - type: string 
+	Parameter SIM_TX_EIDLE_DRIVE_LEVEL bound to: 1'b0 
+	Parameter SIM_VERSION bound to: 2 - type: integer 
+	Parameter TAPDLY_SET_TX bound to: 2'b00 
+	Parameter TEMPERATUR_PAR bound to: 4'b0010 
+	Parameter TERM_RCAL_CFG bound to: 15'b100001000010000 
+	Parameter TERM_RCAL_OVRD bound to: 3'b000 
+	Parameter TRANS_TIME_RATE bound to: 8'b00001110 
+	Parameter TST_RSV0 bound to: 8'b00000000 
+	Parameter TST_RSV1 bound to: 8'b00000000 
+	Parameter TXBUF_EN bound to: FALSE - type: string 
+	Parameter TXBUF_RESET_ON_RATE_CHANGE bound to: TRUE - type: string 
+	Parameter TXDLY_CFG bound to: 16'b0000000000001001 
+	Parameter TXDLY_LCFG bound to: 16'b0000000001010000 
+	Parameter TXDRVBIAS_N bound to: 4'b1010 
+	Parameter TXDRVBIAS_P bound to: 4'b1010 
+	Parameter TXFIFO_ADDR_CFG bound to: LOW - type: string 
+	Parameter TXGBOX_FIFO_INIT_RD_ADDR bound to: 4 - type: integer 
+	Parameter TXGEARBOX_EN bound to: FALSE - type: string 
+	Parameter TXOUT_DIV bound to: 1 - type: integer 
+	Parameter TXPCSRESET_TIME bound to: 5'b00011 
+	Parameter TXPHDLY_CFG0 bound to: 16'b0010000000100000 
+	Parameter TXPHDLY_CFG1 bound to: 16'b0000000001110101 
+	Parameter TXPH_CFG bound to: 16'b0000100110000000 
+	Parameter TXPH_MONITOR_SEL bound to: 5'b00000 
+	Parameter TXPI_CFG0 bound to: 2'b00 
+	Parameter TXPI_CFG1 bound to: 2'b00 
+	Parameter TXPI_CFG2 bound to: 2'b00 
+	Parameter TXPI_CFG3 bound to: 1'b0 
+	Parameter TXPI_CFG4 bound to: 1'b0 
+	Parameter TXPI_CFG5 bound to: 3'b000 
+	Parameter TXPI_GRAY_SEL bound to: 1'b0 
+	Parameter TXPI_INVSTROBE_SEL bound to: 1'b0 
+	Parameter TXPI_LPM bound to: 1'b0 
+	Parameter TXPI_PPMCLK_SEL bound to: TXUSRCLK2 - type: string 
+	Parameter TXPI_PPM_CFG bound to: 8'b00000000 
+	Parameter TXPI_SYNFREQ_PPM bound to: 3'b001 
+	Parameter TXPI_VREFSEL bound to: 1'b0 
+	Parameter TXPMARESET_TIME bound to: 5'b00011 
+	Parameter TXSYNC_MULTILANE bound to: 1'b1 
+	Parameter TXSYNC_OVRD bound to: 1'b0 
+	Parameter TXSYNC_SKIP_DA bound to: 1'b0 
+	Parameter TX_CLK25_DIV bound to: 6 - type: integer 
+	Parameter TX_CLKMUX_EN bound to: 1'b1 
+	Parameter TX_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter TX_DCD_CFG bound to: 6'b000010 
+	Parameter TX_DCD_EN bound to: 1'b0 
+	Parameter TX_DEEMPH0 bound to: 6'b000000 
+	Parameter TX_DEEMPH1 bound to: 6'b000000 
+	Parameter TX_DIVRESET_TIME bound to: 5'b00001 
+	Parameter TX_DRIVE_MODE bound to: DIRECT - type: string 
+	Parameter TX_EIDLE_ASSERT_DELAY bound to: 3'b100 
+	Parameter TX_EIDLE_DEASSERT_DELAY bound to: 3'b011 
+	Parameter TX_EML_PHI_TUNE bound to: 1'b0 
+	Parameter TX_FABINT_USRCLK_FLOP bound to: 1'b0 
+	Parameter TX_IDLE_DATA_ZERO bound to: 1'b0 
+	Parameter TX_INT_DATAWIDTH bound to: 1 - type: integer 
+	Parameter TX_LOOPBACK_DRIVE_HIZ bound to: FALSE - type: string 
+	Parameter TX_MAINCURSOR_SEL bound to: 1'b0 
+	Parameter TX_MARGIN_FULL_0 bound to: 7'b1001111 
+	Parameter TX_MARGIN_FULL_1 bound to: 7'b1001110 
+	Parameter TX_MARGIN_FULL_2 bound to: 7'b1001100 
+	Parameter TX_MARGIN_FULL_3 bound to: 7'b1001010 
+	Parameter TX_MARGIN_FULL_4 bound to: 7'b1001000 
+	Parameter TX_MARGIN_LOW_0 bound to: 7'b1000110 
+	Parameter TX_MARGIN_LOW_1 bound to: 7'b1000101 
+	Parameter TX_MARGIN_LOW_2 bound to: 7'b1000011 
+	Parameter TX_MARGIN_LOW_3 bound to: 7'b1000010 
+	Parameter TX_MARGIN_LOW_4 bound to: 7'b1000000 
+	Parameter TX_MODE_SEL bound to: 3'b000 
+	Parameter TX_PMADATA_OPT bound to: 1'b0 
+	Parameter TX_PMA_POWER_SAVE bound to: 1'b0 
+	Parameter TX_PROGCLK_SEL bound to: PREPI - type: string 
+	Parameter TX_PROGDIV_CFG bound to: 20.000000 - type: float 
+	Parameter TX_QPI_STATUS_EN bound to: 1'b0 
+	Parameter TX_RXDETECT_CFG bound to: 14'b00000000110010 
+	Parameter TX_RXDETECT_REF bound to: 3'b100 
+	Parameter TX_SAMPLE_PERIOD bound to: 3'b111 
+	Parameter TX_SARC_LPBK_ENB bound to: 1'b0 
+	Parameter TX_XCLK_SEL bound to: TXUSR - type: string 
+	Parameter USE_PCS_CLK_PHASE_SEL bound to: 1'b0 
+	Parameter WB_MODE bound to: 2'b00 
+INFO: [Synth 8-256] done synthesizing module 'GTHE3_CHANNEL' (4#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:5776]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gthe3_channel' (5#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_v1_6_gthe3_channel.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_0_gthe3_channel_wrapper' (6#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gthe3_channel_wrapper.v:56]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userclk_tx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_tx.v:55]
+	Parameter P_CONTENTS bound to: 0 - type: integer 
+	Parameter P_FREQ_RATIO_SOURCE_TO_USRCLK bound to: 1 - type: integer 
+	Parameter P_FREQ_RATIO_USRCLK_TO_USRCLK2 bound to: 2 - type: integer 
+	Parameter P_USRCLK_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK_DIV bound to: 3'b000 
+	Parameter P_USRCLK2_INT_DIV bound to: 1 - type: integer 
+	Parameter P_USRCLK2_DIV bound to: 3'b001 
+INFO: [Synth 8-638] synthesizing module 'BUFG_GT' [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:760]
+INFO: [Synth 8-256] done synthesizing module 'BUFG_GT' (7#1) [/opt/Xilinx/Vivado/2015.4/scripts/rt/data/unisim_comp.v:760]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_tx.v:120]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_tx.v:121]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userclk_tx' (8#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_tx.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userclk_rx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_rx.v:55]
+	Parameter P_CONTENTS bound to: 0 - type: integer 
+	Parameter P_FREQ_RATIO_SOURCE_TO_USRCLK bound to: 1 - type: integer 
+	Parameter P_FREQ_RATIO_USRCLK_TO_USRCLK2 bound to: 2 - type: integer 
+	Parameter P_USRCLK_INT_DIV bound to: 0 - type: integer 
+	Parameter P_USRCLK_DIV bound to: 3'b000 
+	Parameter P_USRCLK2_INT_DIV bound to: 1 - type: integer 
+	Parameter P_USRCLK2_DIV bound to: 3'b001 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_rx.v:120]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_rx.v:121]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userclk_rx' (9#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userclk_rx.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_buffbypass_tx.v:55]
+	Parameter P_BUFFER_BYPASS_MODE bound to: 0 - type: integer 
+	Parameter P_TOTAL_NUMBER_OF_CHANNELS bound to: 8 - type: integer 
+	Parameter P_MASTER_CHANNEL_POINTER bound to: 0 - type: integer 
+	Parameter ST_BUFFBYPASS_TX_IDLE bound to: 2'b00 
+	Parameter ST_BUFFBYPASS_TX_DEASSERT_TXDLYSRESET bound to: 2'b01 
+	Parameter ST_BUFFBYPASS_TX_WAIT_TXSYNCDONE bound to: 2'b10 
+	Parameter ST_BUFFBYPASS_TX_DONE bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_bit_synchronizer' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:55]
+	Parameter INITIALIZE bound to: 5'b00000 
+	Parameter FREQUENCY bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:71]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:74]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_bit_synchronizer' (10#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_bit_synchronizer.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx' (11#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_buffbypass_tx.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_buffbypass_rx.v:55]
+	Parameter P_BUFFER_BYPASS_MODE bound to: 0 - type: integer 
+	Parameter P_TOTAL_NUMBER_OF_CHANNELS bound to: 8 - type: integer 
+	Parameter P_MASTER_CHANNEL_POINTER bound to: 0 - type: integer 
+	Parameter ST_BUFFBYPASS_RX_IDLE bound to: 2'b00 
+	Parameter ST_BUFFBYPASS_RX_DEASSERT_RXDLYSRESET bound to: 2'b01 
+	Parameter ST_BUFFBYPASS_RX_WAIT_RXSYNCDONE bound to: 2'b10 
+	Parameter ST_BUFFBYPASS_RX_DONE bound to: 2'b11 
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx' (12#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_buffbypass_rx.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:55]
+	Parameter P_FREERUN_FREQUENCY bound to: 187.500000 - type: float 
+	Parameter P_USE_CPLL_CAL bound to: 0 - type: integer 
+	Parameter P_TX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter P_RX_PLL_TYPE bound to: 0 - type: integer 
+	Parameter P_RX_LINE_RATE bound to: 15.000000 - type: float 
+	Parameter P_CDR_TIMEOUT_FREERUN_CYC bound to: 26'b00000001110000111010100100 
+	Parameter ST_RESET_ALL_INIT bound to: 3'b000 
+	Parameter ST_RESET_ALL_BRANCH bound to: 3'b001 
+	Parameter ST_RESET_ALL_TX_PLL bound to: 3'b010 
+	Parameter ST_RESET_ALL_TX_PLL_WAIT bound to: 3'b011 
+	Parameter ST_RESET_ALL_RX_DP bound to: 3'b100 
+	Parameter ST_RESET_ALL_RX_PLL bound to: 3'b101 
+	Parameter ST_RESET_ALL_RX_WAIT bound to: 3'b110 
+	Parameter ST_RESET_ALL_DONE bound to: 3'b111 
+	Parameter P_TX_PLL_RESET_FREERUN_CYC bound to: 10'b0000000111 
+	Parameter ST_RESET_TX_BRANCH bound to: 3'b000 
+	Parameter ST_RESET_TX_PLL bound to: 3'b001 
+	Parameter ST_RESET_TX_DATAPATH bound to: 3'b010 
+	Parameter ST_RESET_TX_WAIT_LOCK bound to: 3'b011 
+	Parameter ST_RESET_TX_WAIT_USERRDY bound to: 3'b100 
+	Parameter ST_RESET_TX_WAIT_RESETDONE bound to: 3'b101 
+	Parameter ST_RESET_TX_IDLE bound to: 3'b110 
+	Parameter P_RX_PLL_RESET_FREERUN_CYC bound to: 10'b0000000111 
+	Parameter ST_RESET_RX_BRANCH bound to: 3'b000 
+	Parameter ST_RESET_RX_PLL bound to: 3'b001 
+	Parameter ST_RESET_RX_DATAPATH bound to: 3'b010 
+	Parameter ST_RESET_RX_WAIT_LOCK bound to: 3'b011 
+	Parameter ST_RESET_RX_WAIT_CDR bound to: 3'b100 
+	Parameter ST_RESET_RX_WAIT_USERRDY bound to: 3'b101 
+	Parameter ST_RESET_RX_WAIT_RESETDONE bound to: 3'b110 
+	Parameter ST_RESET_RX_IDLE bound to: 3'b111 
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_reset_synchronizer' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:55]
+	Parameter FREQUENCY bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:75]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_reset_synchronizer' (13#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_synchronizer.v:55]
+INFO: [Synth 8-155] case statement is not full and has no default [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:164]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_reset_inv_synchronizer' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:55]
+	Parameter FREQUENCY bound to: 512 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:72]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:73]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:74]
+INFO: [Synth 8-5534] Detected attribute (* ASYNC_REG = "TRUE" *) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:75]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_reset_inv_synchronizer' (14#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_reset_inv_synchronizer.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset' (15#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_reset.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userdata_tx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userdata_tx.v:55]
+	Parameter P_TX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter P_TX_DATA_ENCODING bound to: 0 - type: integer 
+	Parameter P_TOTAL_NUMBER_OF_CHANNELS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userdata_tx' (16#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userdata_tx.v:55]
+INFO: [Synth 8-638] synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userdata_rx' [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userdata_rx.v:55]
+	Parameter P_RX_USER_DATA_WIDTH bound to: 80 - type: integer 
+	Parameter P_RX_DATA_DECODING bound to: 0 - type: integer 
+	Parameter P_TOTAL_NUMBER_OF_CHANNELS bound to: 8 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_v1_6_1_gtwiz_userdata_rx' (17#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_v1_6_1/hdl/verilog/gtwizard_ultrascale_v1_6_gtwiz_userdata_rx.v:55]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_0_gtwizard_gthe3' (18#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_gthe3.v:138]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_0_gtwizard_top' (19#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_gtwizard_top.v:170]
+INFO: [Synth 8-256] done synthesizing module 'gtwizard_ultrascale_0' (20#1) [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.v:57]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:02:44 ; elapsed = 00:03:34 . Memory (MB): peak = 2191.043 ; gain = 1346.895 ; free physical = 26195 ; free virtual = 35481
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:02:44 ; elapsed = 00:03:35 . Memory (MB): peak = 2191.043 ; gain = 1346.895 ; free physical = 26195 ; free virtual = 35481
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xcku060-ffva1156-2-e
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/gtwizard_ultrascale_0_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/gtwizard_ultrascale_0_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.runs/gtwizard_ultrascale_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.runs/gtwizard_ultrascale_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.05 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2341.207 ; gain = 0.000 ; free physical = 26792 ; free virtual = 36078
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 5134 
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:02:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26786 ; free virtual = 36072
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xcku060-ffva1156-2-e
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:02:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26786 ; free virtual = 36072
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:02:53 ; elapsed = 00:03:54 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26786 ; free virtual = 36072
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'gen_gtwiz_buffbypass_tx_main.gen_auto_mode.sm_buffbypass_tx_reg' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx'
+INFO: [Synth 8-802] inferred FSM for state register 'gen_gtwiz_buffbypass_rx_main.gen_auto_mode.sm_buffbypass_rx_reg' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_all_reg' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_tx_reg' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+INFO: [Synth 8-802] inferred FSM for state register 'sm_reset_rx_reg' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+INFO: [Synth 8-5544] ROM "sm_reset_all_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_rx_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_rx_pll_and_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "gtwiz_reset_tx_pll_and_datapath_int" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_all" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_all" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pllreset_tx_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx_pll_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_tx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "pllreset_rx_out" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx_pll_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx_timer_clr" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "sm_reset_rx" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+ST_BUFFBYPASS_TX_DEASSERT_TXDLYSRESET |                               01 |                               01
+ST_BUFFBYPASS_TX_WAIT_TXSYNCDONE |                               10 |                               10
+   ST_BUFFBYPASS_TX_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_gtwiz_buffbypass_tx_main.gen_auto_mode.sm_buffbypass_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                               00 |                               00
+*
+ST_BUFFBYPASS_RX_DEASSERT_RXDLYSRESET |                               01 |                               01
+ST_BUFFBYPASS_RX_WAIT_RXSYNCDONE |                               10 |                               10
+   ST_BUFFBYPASS_RX_DONE |                               11 |                               11
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'gen_gtwiz_buffbypass_rx_main.gen_auto_mode.sm_buffbypass_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_TX_BRANCH |                              000 |                              000
+         ST_RESET_TX_PLL |                              001 |                              001
+    ST_RESET_TX_DATAPATH |                              010 |                              010
+   ST_RESET_TX_WAIT_LOCK |                              011 |                              011
+ST_RESET_TX_WAIT_USERRDY |                              100 |                              100
+ST_RESET_TX_WAIT_RESETDONE |                              101 |                              101
+        ST_RESET_TX_IDLE |                              110 |                              110
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_tx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+      ST_RESET_RX_BRANCH |                              000 |                              000
+         ST_RESET_RX_PLL |                              001 |                              001
+    ST_RESET_RX_DATAPATH |                              010 |                              010
+   ST_RESET_RX_WAIT_LOCK |                              011 |                              011
+    ST_RESET_RX_WAIT_CDR |                              100 |                              100
+ST_RESET_RX_WAIT_USERRDY |                              101 |                              101
+ST_RESET_RX_WAIT_RESETDONE |                              110 |                              110
+        ST_RESET_RX_IDLE |                              111 |                              111
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_rx_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+     ST_RESET_ALL_BRANCH |                              000 |                              001
+     ST_RESET_ALL_TX_PLL |                              001 |                              010
+ST_RESET_ALL_TX_PLL_WAIT |                              010 |                              011
+      ST_RESET_ALL_RX_DP |                              011 |                              100
+     ST_RESET_ALL_RX_PLL |                              100 |                              101
+    ST_RESET_ALL_RX_WAIT |                              101 |                              110
+                  iSTATE |                              110 |                              111
+       ST_RESET_ALL_INIT |                              111 |                              000
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'sm_reset_all_reg' using encoding 'sequential' in module 'gtwizard_ultrascale_v1_6_1_gtwiz_reset'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:54 ; elapsed = 00:03:55 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26770 ; free virtual = 36056
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                8 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 246   
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 2     
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module gtwizard_ultrascale_v1_6_1_gtwiz_userclk_tx 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module gtwizard_ultrascale_v1_6_1_gtwiz_userclk_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module gtwizard_ultrascale_v1_6_1_bit_synchronizer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 4     
+Module gtwizard_ultrascale_v1_6_1_reset_synchronizer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module gtwizard_ultrascale_v1_6_1_reset_inv_synchronizer 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 5     
+Module gtwizard_ultrascale_v1_6_1_gtwiz_reset 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     10 Bit       Adders := 2     
+	   2 Input      3 Bit       Adders := 3     
++---Registers : 
+	               10 Bit    Registers := 2     
+	                3 Bit    Registers := 3     
+	                1 Bit    Registers := 24    
++---Muxes : 
+	   8 Input      3 Bit        Muxes := 1     
+	  10 Input      3 Bit        Muxes := 1     
+	  11 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   7 Input      1 Bit        Muxes := 13    
+	   8 Input      1 Bit        Muxes := 26    
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2760 (col length:120)
+BRAMs: 2160 (col length: RAMB18 120 RAMB36 60)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:02:54 ; elapsed = 00:03:55 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26770 ; free virtual = 36056
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:02:55 ; elapsed = 00:03:55 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26771 ; free virtual = 36058
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:02:55 ; elapsed = 00:03:55 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26771 ; free virtual = 36058
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:02:55 ; elapsed = 00:03:56 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26765 ; free virtual = 36052
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:02:55 ; elapsed = 00:03:56 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26765 ; free virtual = 36052
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:03:02 ; elapsed = 00:04:02 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26524 ; free virtual = 35811
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:03:02 ; elapsed = 00:04:02 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26513 ; free virtual = 35800
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:03:03 ; elapsed = 00:04:03 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26501 ; free virtual = 35788
+---------------------------------------------------------------------------------
+Finished Parallel Technology Mapping Optimization  : Time (s): cpu = 00:03:03 ; elapsed = 00:04:03 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26501 ; free virtual = 35788
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:03:03 ; elapsed = 00:04:03 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26501 ; free virtual = 35788
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:03:03 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26501 ; free virtual = 35788
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:03:03 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26501 ; free virtual = 35788
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:03:03 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:03:03 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35785
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:03:03 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:03:04 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35784
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+--------------+------+
+|      |Cell          |Count |
++------+--------------+------+
+|1     |BUFG_GT       |     4|
+|2     |CARRY8        |     4|
+|3     |GTHE3_CHANNEL |     8|
+|4     |GTHE3_COMMON  |     2|
+|5     |LUT1          |    33|
+|6     |LUT2          |    21|
+|7     |LUT3          |    30|
+|8     |LUT4          |    23|
+|9     |LUT5          |    30|
+|10    |LUT6          |    33|
+|11    |FDCE          |    14|
+|12    |FDPE          |    40|
+|13    |FDRE          |   270|
+|14    |FDSE          |     6|
++------+--------------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+------+
+|      |Instance                                                                                                                     |Module                                               |Cells |
++------+-----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+------+
+|1     |top                                                                                                                          |                                                     |   518|
+|2     |  inst                                                                                                                       |gtwizard_ultrascale_0_gtwizard_top                   |   518|
+|3     |    \gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst                                                        |gtwizard_ultrascale_0_gtwizard_gthe3                 |   518|
+|4     |      \gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst                           |gtwizard_ultrascale_0_gthe3_channel_wrapper          |     8|
+|5     |        channel_inst                                                                                                         |gtwizard_ultrascale_v1_6_1_gthe3_channel_42          |     8|
+|6     |      \gen_gtwizard_gthe3.gen_channel_container[28].gen_enabled_channel.gthe3_channel_wrapper_inst                           |gtwizard_ultrascale_0_gthe3_channel_wrapper_0        |     8|
+|7     |        channel_inst                                                                                                         |gtwizard_ultrascale_v1_6_1_gthe3_channel             |     8|
+|8     |      \gen_gtwizard_gthe3.gen_common.gen_common_container[27].gen_enabled_common.gthe3_common_wrapper_inst                   |gtwizard_ultrascale_0_gthe3_common_wrapper           |     2|
+|9     |        common_inst                                                                                                          |gtwizard_ultrascale_v1_6_1_gthe3_common_41           |     2|
+|10    |      \gen_gtwizard_gthe3.gen_common.gen_common_container[28].gen_enabled_common.gthe3_common_wrapper_inst                   |gtwizard_ultrascale_0_gthe3_common_wrapper_1         |     2|
+|11    |        common_inst                                                                                                          |gtwizard_ultrascale_v1_6_1_gthe3_common              |     2|
+|12    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[0].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer          |     5|
+|13    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[0].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_2        |     5|
+|14    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[1].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_3        |     5|
+|15    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[1].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_4        |     5|
+|16    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[2].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_5        |     5|
+|17    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[2].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_6        |     5|
+|18    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[3].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_7        |     5|
+|19    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[3].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_8        |     5|
+|20    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[4].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_9        |     6|
+|21    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[4].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_10       |     6|
+|22    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[5].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_11       |     5|
+|23    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[5].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_12       |     5|
+|24    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[6].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_13       |     5|
+|25    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[6].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_14       |     5|
+|26    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[7].bit_synchronizer_rxresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_15       |     5|
+|27    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gen_ch_xrd[7].bit_synchronizer_txresetdone_inst  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_16       |     5|
+|28    |      \gen_gtwizard_gthe3.gen_reset_controller_internal.gen_single_instance.gtwiz_reset_inst                                 |gtwizard_ultrascale_v1_6_1_gtwiz_reset               |   332|
+|29    |        bit_synchronizer_gtpowergood_inst                                                                                    |gtwizard_ultrascale_v1_6_1_bit_synchronizer_23       |     6|
+|30    |        bit_synchronizer_gtwiz_reset_rx_datapath_dly_inst                                                                    |gtwizard_ultrascale_v1_6_1_bit_synchronizer_24       |     5|
+|31    |        bit_synchronizer_gtwiz_reset_rx_pll_and_datapath_dly_inst                                                            |gtwizard_ultrascale_v1_6_1_bit_synchronizer_25       |     7|
+|32    |        bit_synchronizer_gtwiz_reset_tx_datapath_dly_inst                                                                    |gtwizard_ultrascale_v1_6_1_bit_synchronizer_26       |     5|
+|33    |        bit_synchronizer_gtwiz_reset_tx_pll_and_datapath_dly_inst                                                            |gtwizard_ultrascale_v1_6_1_bit_synchronizer_27       |    10|
+|34    |        bit_synchronizer_gtwiz_reset_userclk_rx_active_inst                                                                  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_28       |    10|
+|35    |        bit_synchronizer_gtwiz_reset_userclk_tx_active_inst                                                                  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_29       |     8|
+|36    |        bit_synchronizer_plllock_rx_inst                                                                                     |gtwizard_ultrascale_v1_6_1_bit_synchronizer_30       |    11|
+|37    |        bit_synchronizer_plllock_tx_inst                                                                                     |gtwizard_ultrascale_v1_6_1_bit_synchronizer_31       |    10|
+|38    |        bit_synchronizer_rxcdrlock_inst                                                                                      |gtwizard_ultrascale_v1_6_1_bit_synchronizer_32       |     8|
+|39    |        reset_synchronizer_gtwiz_reset_all_inst                                                                              |gtwizard_ultrascale_v1_6_1_reset_synchronizer        |     5|
+|40    |        reset_synchronizer_gtwiz_reset_rx_any_inst                                                                           |gtwizard_ultrascale_v1_6_1_reset_synchronizer_33     |     7|
+|41    |        reset_synchronizer_gtwiz_reset_rx_datapath_inst                                                                      |gtwizard_ultrascale_v1_6_1_reset_synchronizer_34     |     6|
+|42    |        reset_synchronizer_gtwiz_reset_rx_pll_and_datapath_inst                                                              |gtwizard_ultrascale_v1_6_1_reset_synchronizer_35     |     6|
+|43    |        reset_synchronizer_gtwiz_reset_tx_any_inst                                                                           |gtwizard_ultrascale_v1_6_1_reset_synchronizer_36     |     7|
+|44    |        reset_synchronizer_gtwiz_reset_tx_datapath_inst                                                                      |gtwizard_ultrascale_v1_6_1_reset_synchronizer_37     |     5|
+|45    |        reset_synchronizer_gtwiz_reset_tx_pll_and_datapath_inst                                                              |gtwizard_ultrascale_v1_6_1_reset_synchronizer_38     |     6|
+|46    |        reset_synchronizer_rx_done_inst                                                                                      |gtwizard_ultrascale_v1_6_1_reset_inv_synchronizer    |     6|
+|47    |        reset_synchronizer_tx_done_inst                                                                                      |gtwizard_ultrascale_v1_6_1_reset_inv_synchronizer_39 |     6|
+|48    |        reset_synchronizer_txprogdivreset_inst                                                                               |gtwizard_ultrascale_v1_6_1_reset_synchronizer_40     |     5|
+|49    |      \gen_gtwizard_gthe3.gen_rx_buffer_bypass_internal.gen_single_instance.gtwiz_buffbypass_rx_inst                         |gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_rx       |    38|
+|50    |        \gen_gtwiz_buffbypass_rx_main.gen_auto_mode.bit_synchronizer_masterphaligndone_inst                                  |gtwizard_ultrascale_v1_6_1_bit_synchronizer_20       |     6|
+|51    |        \gen_gtwiz_buffbypass_rx_main.gen_auto_mode.bit_synchronizer_mastersyncdone_inst                                     |gtwizard_ultrascale_v1_6_1_bit_synchronizer_21       |     5|
+|52    |        \gen_gtwiz_buffbypass_rx_main.gen_auto_mode.bit_synchronizer_resetdone_inst                                          |gtwizard_ultrascale_v1_6_1_bit_synchronizer_22       |    11|
+|53    |      \gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst                            |gtwizard_ultrascale_v1_6_1_gtwiz_userclk_rx          |     4|
+|54    |      \gen_gtwizard_gthe3.gen_tx_buffer_bypass_internal.gen_single_instance.gtwiz_buffbypass_tx_inst                         |gtwizard_ultrascale_v1_6_1_gtwiz_buffbypass_tx       |    38|
+|55    |        \gen_gtwiz_buffbypass_tx_main.gen_auto_mode.bit_synchronizer_master_phaligndone_inst                                 |gtwizard_ultrascale_v1_6_1_bit_synchronizer_17       |     6|
+|56    |        \gen_gtwiz_buffbypass_tx_main.gen_auto_mode.bit_synchronizer_master_syncdone_inst                                    |gtwizard_ultrascale_v1_6_1_bit_synchronizer_18       |     5|
+|57    |        \gen_gtwiz_buffbypass_tx_main.gen_auto_mode.bit_synchronizer_resetdone_inst                                          |gtwizard_ultrascale_v1_6_1_bit_synchronizer_19       |    11|
+|58    |      \gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst                            |gtwizard_ultrascale_v1_6_1_gtwiz_userclk_tx          |     4|
++------+-----------------------------------------------------------------------------------------------------------------------------+-----------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:03:04 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35784
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:55 ; elapsed = 00:02:55 . Memory (MB): peak = 2341.207 ; gain = 1167.770 ; free physical = 26498 ; free virtual = 35784
+Synthesis Optimization Complete : Time (s): cpu = 00:03:04 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1497.059 ; free physical = 26498 ; free virtual = 35784
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-262] Added new bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-265] Reconnecting BUFG: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-265] Reconnecting BUFG: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-262] Added new bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+INFO: [Opt 31-265] Reconnecting BUFG: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-265] Reconnecting BUFG: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0_ooc.xdc] for cell 'inst'
+Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
+Finished Parsing XDC File [/home/hmc/Desktop/pantho/HMC-Fresh-Copy/HMC-Fresh-Copy.srcs/sources_1/ip/gtwizard_ultrascale_0/synth/gtwizard_ultrascale_0.xdc] for cell 'inst'
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_rx_user_clocking_internal.gen_single_instance.gtwiz_userclk_rx_inst/gen_gtwiz_userclk_rx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk2_inst
+INFO: [Opt 31-264] Inserting BUFG_GT_SYNC for bufg: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_tx_user_clocking_internal.gen_single_instance.gtwiz_userclk_tx_inst/gen_gtwiz_userclk_tx_main.bufg_gt_usrclk_inst
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC
+INFO: [Opt 31-263] Collapsing BUFG_gt_syncs for bufg_gt_sync: inst/gen_gtwizard_gthe3_top.gtwizard_ultrascale_0_gtwizard_gthe3_inst/gen_gtwizard_gthe3.gen_channel_container[27].gen_enabled_channel.gthe3_channel_wrapper_inst/channel_inst/BUFG_GT_SYNC_1
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+112 Infos, 5 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:04 ; elapsed = 00:04:04 . Memory (MB): peak = 2341.207 ; gain = 1376.707 ; free physical = 26496 ; free virtual = 35783
+INFO: [Coretcl 2-1174] Renamed 57 cell refs.
+report_utilization: Time (s): cpu = 00:00:00.08 ; elapsed = 00:00:00.11 . Memory (MB): peak = 2373.227 ; gain = 0.000 ; free physical = 26493 ; free virtual = 35781
+INFO: [Common 17-206] Exiting Vivado at Wed Dec 13 21:45:36 2017...
