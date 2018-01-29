@@ -17,10 +17,10 @@
 
 using namespace std;
 
-uint64_t *image64;
+uint16_t *image16;
 im_short Input;
 im_short Output;
-int size64; 
+int size16; 
 int sizeImage;
 
 void read_regs(PicoDrv* pico){
@@ -46,20 +46,20 @@ void write_reg(uint32_t address,uint32_t data, PicoDrv* pico){
 }
 
 
-uint64_t *buf_out;
+uint16_t *buf_out;
 void read_ram(uint32_t address, uint32_t size, PicoDrv* pico){
         printf("Calling ReadRam() \n");
         
         char ibuf[1024];
         int err;
 
-        buf_out = (uint64_t *) malloc(size);
+        buf_out = (uint16_t *) malloc(size);
         for(int i = 0; i < size; i= i + 16){
                 if((i+ 16) < size) {
-                        if ((err = pico->ReadRam(address + i, &buf_out[i/sizeof(uint64_t)], 16, 0)) < 0){fprintf(stderr, "Error Reading: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));}
+                        if ((err = pico->ReadRam(address + i, &buf_out[i/sizeof(uint16_t)], 16, 0)) < 0){fprintf(stderr, "Error Reading: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));}
 		}
                 else{
-                        if ((err = pico->ReadRam(address + i, &buf_out[i/sizeof(uint64_t)], size-i, 0)) < 0){fprintf(stderr, "Error Reading: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));}
+                        if ((err = pico->ReadRam(address + i, &buf_out[i/sizeof(uint16_t)], size-i, 0)) < 0){fprintf(stderr, "Error Reading: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));}
                 }
 		
         }
@@ -68,22 +68,22 @@ void read_ram(uint32_t address, uint32_t size, PicoDrv* pico){
 
 void write_ram(uint32_t address, uint32_t size, PicoDrv* pico){
         printf("Calling WriteRam() \n");
-        uint64_t *buf_in;
+        uint16_t *buf_in;
         char ibuf[1024];
         int err;
 
-        buf_in = (uint64_t *) malloc(size);
-        for(int i = 0; i < (size/sizeof(uint64_t)); i++){
+        buf_in = (uint16_t *) malloc(size);
+        for(int i = 0; i < (size/sizeof(uint16_t)); i++){
                 buf_in[i] = Input.Data1D[i];
 
         }
 
         for(int i = 0; i < size; i= i + 1024){
                 if((i + 1024) < size){
-                        if ((err = pico->WriteRam(address + i, &buf_in[i/sizeof(uint64_t)], 1024, 0)) < 0) {fprintf(stderr, "Error Writing: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));};
+                        if ((err = pico->WriteRam(address + i, &buf_in[i/sizeof(uint16_t)], 1024, 0)) < 0) {fprintf(stderr, "Error Writing: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));};
                 }
                 else{
-                        if ((err = pico->WriteRam(address + i, &buf_in[i/sizeof(uint64_t)], size-i, 0)) < 0) {fprintf(stderr, "Error Writing: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));};
+                        if ((err = pico->WriteRam(address + i, &buf_in[i/sizeof(uint16_t)], size-i, 0)) < 0) {fprintf(stderr, "Error Writing: %s\n",PicoErrors_FullError(err, ibuf, sizeof(ibuf)));};
                 }
         }
 
@@ -109,7 +109,7 @@ int main(int argc, char* argv[]){
         }
 
         hmc_address = strtoul(argv[1],NULL,0);
-        vector_size = sizeImage/2;
+        vector_size = sizeImage/8;
 
         printf("specified HMC address: %08x \n",hmc_address);
         printf("Finding an FPGA matching model = 0x%0X\n", model);
