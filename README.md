@@ -15,7 +15,7 @@ How to run:
 1. Load the bitfile
 2. Go to software directory
 3. command: <./process 0>
-4. Now wait!!!
+4. Output takes 2 minutes. Change the byte size in the writeram and readram function to get faster results. 
 
 To build the Vivado Project:
 1. Take the files under firmware directory
