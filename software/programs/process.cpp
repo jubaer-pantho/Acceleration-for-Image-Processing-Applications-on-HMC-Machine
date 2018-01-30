@@ -17,7 +17,7 @@
 
 using namespace std;
 
-uint16_t *image16;
+uint16_t *image8;
 im_short Input;
 im_short Output;
 int size16; 
@@ -121,23 +121,20 @@ int main(int argc, char* argv[]){
         write_ram(hmc_address,16*vector_size,pico[0]); // changes
 	clock_t end = clock();
 	double time_writing = double(end-begin) / CLOCKS_PER_SEC;
-	
-
-        read_regs(pico[0]);
-        
+		
+		printf("Register values before operation:\n");
+		read_regs(pico[0]);
 		
         write_reg(0x00010000,hmc_address,pico[0]);      // Send address to FPGA
         write_reg(0x00010018,vector_size,pico[0]);      // Send vector size to FPGA
         printf("Enabling operation \n");
         write_reg(0x00010004,0xFFFFFFFF,pico[0]);       // Send start signal to FPGA
         
-        read_regs(pico[0]);
+        
         sleep(3);       // Wait 6 seconds (magic number) for the FPGA to finish
 
 	printf("Results of operation:\n");
         read_regs(pico[0]);
-        printf("Results of operation 2:\n");
-		read_regs(pico[0]);
         hmc_address = vector_size*16;
 
 	begin = clock();
@@ -161,5 +158,18 @@ int main(int argc, char* argv[]){
 			
 printf("Time to write: %lf\n",time_writing);
 printf("Time to read: %lf\n",time_read);
+
+
+	/* Read the clock cycles needed and calculate the read data throughput */
+	if((err = pico[0]->ReadDeviceAbsolute(0x00010008, &ticks, 4)) != 4){
+			fprintf(stderr, "Error Reading: %d\n",err);
+	}
+	printf("ticks: %d \n",ticks);
+	double time = ((ticks) / 4.0)/1000; // Time in ms
+	printf("measured time: %f ms\n",time);
+	double rate = vector_size*16/(time*1000); // Write data rate in MB/s
+	printf("measured read data rate: %f MB/s \n",rate*2);
+	printf("measured write data rate: %f MB/s \n",rate);	
+	
     return 0;
 }
