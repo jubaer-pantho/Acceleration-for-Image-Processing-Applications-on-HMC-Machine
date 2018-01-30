@@ -1,4 +1,7 @@
-
+/*
+* Description:
+* Wrapper of GUPS
+*/
 `timescale 1ns/1ps
 
 `include "reg_list.vh"
@@ -54,7 +57,9 @@ module gups_top # (
     input  wire [31:0]              work_size,
     input  wire [31:0]              hmc_address,
     input  wire                     enable,        
-    output reg                      finished
+    output reg                      finished,
+    output reg [31:0]               rd_addr,
+    output reg [31:0]               wr_addr
        
 );  
        
@@ -63,6 +68,7 @@ module gups_top # (
     reg startFunction; //added
     wire functionDone; //added
     
+
     
     reg[127:0] data_this;
     reg[5:0] counter_rd=0;
@@ -91,7 +97,7 @@ module gups_top # (
     reg[31:0] valid_signal;
     
     reg [6:0] readCounter = 0;
-    
+       
     //user logic change
    invertImage invertValues (
        .startFunction(startFunction),
@@ -134,7 +140,11 @@ module gups_top # (
     
     reg enable_this;
     
- always @(posedge rx_clk) begin
+ always @(posedge rx_clk) begin 
+ 
+    rd_addr = current_addr[31:0];
+    wr_addr = write_addr[31:0]; 
+    
     if(rst) begin
         cmd_this <= 0;
         addr_this <= 0;
@@ -183,7 +193,8 @@ module gups_top # (
             readCounter<=0;
             writeStart <=0;
             current_addr <= hmc_address;
-            write_addr <= hmc_address + 16*vector_size;            
+            write_addr <= hmc_address + 16*vector_size;
+                        
         end
         else if(enable_this ==1) begin
             if(!cmd_full && !readFinished && counter_rd<32) begin
@@ -194,20 +205,25 @@ module gups_top # (
                 wr_en_data <= 0;
                 tag_this <= counter_rd; 
                 current_addr <= current_addr +16;
-             
                 counter_rd <= counter_rd+1;   // only 32 tags are being used           
                 
-                if(current_addr >= (hmc_address + 16*work_size)) begin       //16 ->32
+                if(current_addr == (hmc_address + 16*work_size)) begin
+                    startFunction <= 1; 
                     readFinished <=1;
-                    current_addr <= current_addr+16;
-                    
                 end
                 
                  
             end
             else if(writeStart && !cmd_full && !data_full && readCounter >=(counter_rd-1) && !writeFinished && (functionDone)) begin
-    
-                if(counter_wr !=  32) begin
+                if(write_addr == (hmc_address + 16*vector_size + 16*work_size)) begin //made change 16->32
+                    finished <=1;
+                    writeFinished <=1;
+                    writeStart <=0;
+                    wr_en_data <= 0;
+                    wr_en_cmd <= 0; 
+                
+                end    
+                else if(counter_wr !=  32) begin
                     data_this <= invertedValues[counter_wr];
                     cmd_this <= `HMC_CMD_WR;
                     wr_en_data <= 1;
@@ -215,38 +231,28 @@ module gups_top # (
                     wr_en_cmd <= 1;
                     addr_this <= write_addr;
                     write_addr <= write_addr +16;
-                end
-            
+                end                                      
+                
                 if(counter_wr <32 && counter_wr<counter_rd) begin                            
                     counter_wr <= counter_wr+1;                       
                 end
                 else begin
-                    writeStart <=0;
-                    counter_wr <= 0;
-                    counter_rd <= 0;
-                    readCounter <=0;
-                    startFunction <= 0;
-                    //write_addr <= write_addr -16;
-                    
                     if(readFinished ==1) begin
+                          finished <=1;
                           writeFinished <=1;
                           writeStart <=0;
                           wr_en_data <= 0;
                           wr_en_cmd <= 0;  
                     end
+                    else begin
+                        writeStart <=0;
+                        counter_wr <= 0;
+                        counter_rd <= 0;
+                        readCounter <=0;
+                        startFunction <= 0;
+                    end
                     
                 end
-                
-                if(write_addr >= (hmc_address + 16*vector_size + 16 *work_size)) begin //made change 16->32
-                    finished <=1;
-                    writeFinished <=1;
-                    writeStart <=0;
-                    wr_en_data <= 0;
-                    wr_en_cmd <= 0; 
-                
-                end
-                
-                
                 
                             
             end
@@ -266,7 +272,7 @@ module gups_top # (
 
 
 //if_id3            
-        if((current_addr >= (hmc_address + 16*work_size))  && (writeFinished ==1)) begin
+        if(write_addr == (hmc_address + 16*vector_size + 16 *work_size)) begin
              if(enable == 0) begin
                  enable_this <= 0;
                  finished <= 0;
@@ -275,26 +281,7 @@ module gups_top # (
                  finished <= 1;
              end            
         end
-//if_id3ends
-/*        
-        if (enable == 0) begin
-            enable_this <=0;
-            wr_en_data <= 0;
-            wr_en_cmd <= 0;
-            counter_rd <=0;
-            counter_wr <=0;
-            current_addr <= 0;
-            startFunction <= 0;   
-            readCounter<=0;
-            
-            cmd_this <= 0;
-            addr_this <= 0;
-            tag_this <= 0;
-            size_this <= 0;
-            data_this <= 0;
-        end
-*/        
-        
+//if_id3ends               
             
 //else_id2       
     end
