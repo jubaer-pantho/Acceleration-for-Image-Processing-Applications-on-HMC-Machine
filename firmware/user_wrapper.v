@@ -229,22 +229,22 @@ module user_wrapper #(
             else `PICO_READ(32'h1004C, PicoDataOut_this <= errstat_m5;)
             else `PICO_READ(32'h10050, PicoDataOut_this <= errstat_m6;)
             else `PICO_READ(32'h10054, PicoDataOut_this <= errstat_m7;)
-            else `PICO_READ(32'h10058, PicoDataOut_this <= errstat_count_m0;)
-            else `PICO_READ(32'h1005C, PicoDataOut_this <= errstat_count_m1;)
-            else `PICO_READ(32'h10060, PicoDataOut_this <= errstat_count_m2;)
-            else `PICO_READ(32'h10064, PicoDataOut_this <= errstat_count_m3;)
-            else `PICO_READ(32'h10068, PicoDataOut_this <= errstat_count_m4;)
-            else `PICO_READ(32'h1006C, PicoDataOut_this <= errstat_count_m5;)
-            else `PICO_READ(32'h10070, PicoDataOut_this <= errstat_count_m6;)
-            else `PICO_READ(32'h10074, PicoDataOut_this <= errstat_count_m7;)
-            else `PICO_READ(32'h10078, PicoDataOut_this <= dinv_count_m0;)
-            else `PICO_READ(32'h1007C, PicoDataOut_this <= dinv_count_m1;)
-            else `PICO_READ(32'h10080, PicoDataOut_this <= dinv_count_m2;)
-            else `PICO_READ(32'h10084, PicoDataOut_this <= dinv_count_m3;)
-            else `PICO_READ(32'h10088, PicoDataOut_this <= dinv_count_m4;)
-            else `PICO_READ(32'h1008C, PicoDataOut_this <= dinv_count_m5;)
-            else `PICO_READ(32'h10090, PicoDataOut_this <= dinv_count_m6;)
-            else `PICO_READ(32'h10094, PicoDataOut_this <= dinv_count_m7;)
+            else `PICO_READ(32'h10058, PicoDataOut_this <= rd_add0;)
+            else `PICO_READ(32'h1005C, PicoDataOut_this <= rd_add1;)
+            else `PICO_READ(32'h10060, PicoDataOut_this <= rd_add2;)
+            else `PICO_READ(32'h10064, PicoDataOut_this <= rd_add3;)
+            else `PICO_READ(32'h10068, PicoDataOut_this <= rd_add4;)
+            else `PICO_READ(32'h1006C, PicoDataOut_this <= rd_add5;)
+            else `PICO_READ(32'h10070, PicoDataOut_this <= rd_add6;)
+            else `PICO_READ(32'h10074, PicoDataOut_this <= rd_add7;)
+            else `PICO_READ(32'h10078, PicoDataOut_this <= wr_add0;)
+            else `PICO_READ(32'h1007C, PicoDataOut_this <= wr_add1;)
+            else `PICO_READ(32'h10080, PicoDataOut_this <= wr_add2;)
+            else `PICO_READ(32'h10084, PicoDataOut_this <= wr_add3;)
+            else `PICO_READ(32'h10088, PicoDataOut_this <= wr_add4;)
+            else `PICO_READ(32'h1008C, PicoDataOut_this <= wr_add5;)
+            else `PICO_READ(32'h10090, PicoDataOut_this <= wr_add6;)
+            else `PICO_READ(32'h10094, PicoDataOut_this <= wr_add7;)
             else `PICO_READ(32'h10098, PicoDataOut_this <= work_size0;)
             else `PICO_READ(32'h1009C, PicoDataOut_this <= work_size1;)
             else `PICO_READ(32'h100A0, PicoDataOut_this <= work_size2;)
@@ -323,6 +323,28 @@ module user_wrapper #(
     
     (* mark_debug = "true" *) wire finished;
     
+    //modification
+    wire [31:0] rd_add0;
+    wire [31:0] rd_add1;
+    wire [31:0] rd_add2;
+    wire [31:0] rd_add3;
+    wire [31:0] rd_add4;
+    wire [31:0] rd_add5;
+    wire [31:0] rd_add6;
+    wire [31:0] rd_add7;
+    
+    wire [31:0] wr_add0;
+    wire [31:0] wr_add1;
+    wire [31:0] wr_add2;
+    wire [31:0] wr_add3;
+    wire [31:0] wr_add4;
+    wire [31:0] wr_add5;
+    wire [31:0] wr_add6;
+    wire [31:0] wr_add7;
+    
+    //modifucation ends
+          
+    
     /* Split the address space of the vector and assign it to the 8 modules */
     assign work_size0 = vector_size/8;
     assign work_size1 = vector_size/8;
@@ -342,7 +364,7 @@ module user_wrapper #(
     assign hmc_address7 = hmc_address6 + work_size6*16;
     assign finished = finished0 && finished1 && finished2 && finished3 && finished4 && finished5 && finished6 && finished7;
     
-    /* Instantiate 8 modules. Every module uses one user port of the HMC Controller
+    /* Instantiate 8 vector addition modules. Every module uses one user port of the HMC Controller
     and is responsible for a portion of the vector address space. */
     gups_top UserModule_0 (
         .tx_clk(tx_clk),
@@ -382,7 +404,9 @@ module user_wrapper #(
         .work_size(work_size0),
         .hmc_address(hmc_address0),
         .enable(enable),
-        .finished(finished0)
+        .finished(finished0),
+        .rd_addr(rd_add0),
+        .wr_addr(wr_add0)
         
     );
     
@@ -424,7 +448,9 @@ module user_wrapper #(
         .work_size(work_size1),
         .hmc_address(hmc_address1),
         .enable(enable),
-        .finished(finished1)
+        .finished(finished1),
+        .rd_addr(rd_add1),
+        .wr_addr(wr_add1)        
         
     );
     
@@ -465,7 +491,9 @@ module user_wrapper #(
             .work_size(work_size3),
             .hmc_address(hmc_address3),
             .enable(enable),
-            .finished(finished3)
+            .finished(finished3),
+            .rd_addr(rd_add3),
+            .wr_addr(wr_add3)
             
         );
         
@@ -506,7 +534,9 @@ module user_wrapper #(
             .work_size(work_size2),
             .hmc_address(hmc_address2),
             .enable(enable),
-            .finished(finished2)
+            .finished(finished2),
+            .rd_addr(rd_add2),
+            .wr_addr(wr_add2)
             
         );
 
@@ -547,7 +577,9 @@ module user_wrapper #(
             .work_size(work_size4),
             .hmc_address(hmc_address4),
             .enable(enable),
-            .finished(finished4)
+            .finished(finished4),
+            .rd_addr(rd_add4),
+            .wr_addr(wr_add4)
             
         );
 
@@ -588,7 +620,9 @@ module user_wrapper #(
             .work_size(work_size5),
             .hmc_address(hmc_address5),
             .enable(enable),
-            .finished(finished5)
+            .finished(finished5),
+            .rd_addr(rd_add5),
+            .wr_addr(wr_add5)
             
         );  
         
@@ -629,7 +663,9 @@ module user_wrapper #(
                 .work_size(work_size6),
                 .hmc_address(hmc_address6),
                 .enable(enable),
-                .finished(finished6)
+                .finished(finished6),
+                .rd_addr(rd_add6),
+                .wr_addr(wr_add6)
                 
             );  
             
@@ -670,7 +706,9 @@ module user_wrapper #(
                     .work_size(work_size7),
                     .hmc_address(hmc_address7),
                     .enable(enable),
-                    .finished(finished7)
+                    .finished(finished7),
+                    .rd_addr(rd_add7),
+                    .wr_addr(wr_add7)
                     
                 );        
     
